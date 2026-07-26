@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital Library — 128,000 titles, journals, audiobooks and downloads | Luis Urbiola</title>
+<meta name="description" content="The Luis Urbiola digital library: 128,000 titles, 9,400 audiobooks, 620 academic journals and 41,000 hours of video. Open 24 hours a day, free for every enrolled student and every alumnus for life. Four floors and 320 study seats in Miraflores, Lima.">
+<meta property="og:title" content="Digital Library — Luis Urbiola">
+<meta property="og:description" content="128,000 titles, IEEE Xplore, JSTOR, ScienceDirect and SciELO. Open 24/7, free for students and alumni for life.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=75">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230057D9'/%3E%3Ctext x='32' y='42' font-family='Helvetica,Arial' font-size='27' font-weight='bold' fill='white' text-anchor='middle'%3ELU%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('lu-theme');if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="library">
+<div id="site-header-mount"></div>
+<main id="main">
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <img class="ph-bg" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1920&q=75" alt="" loading="eager">
+  <div class="container">
+    <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="virtual-campus.html">Campus</a><span>/</span>Digital Library</nav>
+    <span class="eyebrow reveal" style="color:var(--gold-300)">Biblioteca Luis Urbiola</span>
+    <h1 class="reveal" data-d="1">The digital library</h1>
+    <p class="lead reveal" data-d="2">One hundred and twenty-eight thousand titles, six international research databases, 9,400 audiobooks and 41,000 hours of recorded lectures. Open twenty-four hours a day, on any device, and free for every enrolled student and every alumnus for life — there is no renewal, no lapse and no fee.</p>
+    <div class="hero-cta reveal" data-d="3">
+      <a class="btn btn-primary btn-lg" href="#lib-grid">Browse the collection</a>
+      <a class="btn btn-glass btn-lg" href="#journals">Research databases</a>
+    </div>
+    <div class="hero-badges reveal" data-d="4">
+      <span>Open 24 hours, every day of the year</span><span>Free for life after graduation</span><span>Four floors in Miraflores · 320 seats</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="section-sm">
+  <div class="container">
+    <div class="grid g4 reveal">
+      <div class="card stat">
+        <div class="num"><span data-count="128000" data-suffix="+">0</span></div>
+        <div class="lbl">Titles in the catalogue</div>
+      </div>
+      <div class="card stat">
+        <div class="num"><span data-count="9400" data-suffix="+">0</span></div>
+        <div class="lbl">Audiobooks, English and Spanish</div>
+      </div>
+      <div class="card stat">
+        <div class="num"><span data-count="620" data-suffix="">0</span></div>
+        <div class="lbl">Academic journals subscribed</div>
+      </div>
+      <div class="card stat">
+        <div class="num"><span data-count="41000" data-suffix=" h">0</span></div>
+        <div class="lbl">Hours of recorded video</div>
+      </div>
+    </div>
+    <p class="tc muted mt-24 reveal" style="font-size:.86rem">Catalogue figures verified 1 July 2026. Access is granted automatically with your student or alumni credentials — nothing to install.</p>
+  </div>
+</section>
+
+<!-- ================= COLLECTION ================= -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The collection</span>
+      <h2>Search 128,000 titles across every format we hold</h2>
+      <p class="lead"><strong data-filter-count="#lib-grid">21</strong> featured resources shown below. Filter by format or search by title, author or subject. Every item opens in the browser reader; most are also downloadable for offline study.</p>
+    </div>
+
+    <div class="flex wrap gap-12 reveal" style="margin-bottom:14px" data-filter-group="#lib-grid" role="group" aria-label="Filter library resources by format">
+      <button class="chip active" data-filter="all" aria-pressed="true">All formats</button>
+      <button class="chip" data-filter="books" aria-pressed="false">Books</button>
+      <button class="chip" data-filter="audiobooks" aria-pressed="false">Audiobooks</button>
+      <button class="chip" data-filter="papers" aria-pressed="false">Papers</button>
+      <button class="chip" data-filter="videos" aria-pressed="false">Videos</button>
+      <button class="chip" data-filter="pdfs" aria-pressed="false">PDFs</button>
+      <button class="chip" data-filter="magazines" aria-pressed="false">Magazines</button>
+      <button class="chip" data-filter="journals" aria-pressed="false">Journals</button>
+    </div>
+    <div class="reveal" style="margin-bottom:30px">
+      <input class="input" data-search="#lib-grid" type="search" placeholder="Search by title, author, subject or ISSN…" aria-label="Search the library catalogue" style="max-width:440px">
+    </div>
+
+    <div class="grid g3" id="lib-grid">
+
+      <article class="card card-hover course-card" data-tags="books">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=760&q=75" alt="Cover of an English grammar reference on a library shelf" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Book</span>
+          <h3>Practical English Usage, Fourth Edition</h3>
+          <p class="course-desc">Michael Swan · Oxford University Press · 2016. The reference our School of English gives every instructor on their first day.</p>
+          <div class="course-meta"><span>2016</span><span>English</span><span>688 pp</span><span>42 licences</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="books">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=760&q=75" alt="Programming reference book beside a laptop showing code" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Book</span>
+          <h3>Clean Architecture: A Craftsman's Guide to Software Structure</h3>
+          <p class="course-desc">Robert C. Martin · Pearson · 2017. Core reading for the second year of Full-Stack Web and for every software engineering elective.</p>
+          <div class="course-meta"><span>2017</span><span>English</span><span>432 pp</span><span>30 licences</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="books">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=760&q=75" alt="Neural network illustration on the cover of a machine learning textbook" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Book</span>
+          <h3>Deep Learning</h3>
+          <p class="course-desc">Ian Goodfellow, Yoshua Bengio and Aaron Courville · MIT Press · 2016. Prescribed for the Artificial Intelligence and Machine Learning track.</p>
+          <div class="course-meta"><span>2016</span><span>English</span><span>800 pp</span><span>Unlimited</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="books">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=760&q=75" alt="Historical study of Perú displayed in a reading room" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Book</span>
+          <h3>Historia de la República del Perú, tomos I–III</h3>
+          <p class="course-desc">Jorge Basadre Grohmann · Editorial El Comercio · edición 2014. Fondo peruano, digitalised in full and searchable by chapter.</p>
+          <div class="course-meta"><span>2014</span><span>Español</span><span>1,940 pp</span><span>Unlimited</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="books">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=760&q=75" alt="Business strategy textbook open on a meeting table" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Book</span>
+          <h3>Competitive Strategy: Techniques for Analyzing Industries</h3>
+          <p class="course-desc">Michael E. Porter · Free Press · 2004 edition. Case set for the Executive MBA strategy module, with the Peruvian annexes added by our faculty.</p>
+          <div class="course-meta"><span>2004</span><span>English</span><span>396 pp</span><span>24 licences</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="audiobooks">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=760&q=75" alt="Student listening to an audiobook with headphones while taking notes" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiobook</span>
+          <h3>Thinking, Fast and Slow</h3>
+          <p class="course-desc">Daniel Kahneman, read by Patrick Egan · Random House Audio · 2011. Set listening for Behavioural Economics and for the C1 Advanced listening module.</p>
+          <div class="course-meta"><span>2011</span><span>English</span><span>20 h 02 min</span><span>Streaming</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#audio">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="audiobooks">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=760&q=75" alt="Learner practising English listening in a language laboratory" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiobook</span>
+          <h3>La ciudad y los perros</h3>
+          <p class="course-desc">Mario Vargas Llosa, narrado por Raúl Arévalo · Alfaguara Audio · 2019. Lectura obligatoria de Literatura Peruana Contemporánea.</p>
+          <div class="course-meta"><span>2019</span><span>Español</span><span>13 h 47 min</span><span>Streaming</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#audio">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="audiobooks">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=760&q=75" alt="Students listening to recorded material together in a study room" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiobook</span>
+          <h3>Cambridge C1 Advanced: Listening Practice Collection</h3>
+          <p class="course-desc">Cambridge University Press · 2025. Ninety graded listening sets with transcripts, produced for the CAE format used from January 2025.</p>
+          <div class="course-meta"><span>2025</span><span>English</span><span>18 h 20 min</span><span>Download</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#downloads">Download</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="papers">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=760&q=75" alt="Researchers reviewing results at a laboratory workstation" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Paper</span>
+          <h3>Machine tutoring and completion rates in Latin American higher education</h3>
+          <p class="course-desc">Quispe, A., Alcántara, R. and Reyna, C. · Revista Peruana de Educación Superior, vol. 14, no. 2 · peer reviewed, open access.</p>
+          <div class="course-meta"><span>2026</span><span>English</span><span>28 pp</span><span>DOI registered</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#downloads">Download</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="papers">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=760&q=75" alt="Security operations analyst reviewing network telemetry" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Paper</span>
+          <h3>Incident response maturity in Peruvian financial institutions, 2020–2025</h3>
+          <p class="course-desc">Reyna, C. and Paz, L. F. · IEEE Latin America Transactions · a five-year study of 38 regulated entities and their reported detection times.</p>
+          <div class="course-meta"><span>2025</span><span>English</span><span>19 pp</span><span>IEEE Xplore</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#journals">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="papers">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=760&q=75" alt="Examination papers and statistical tables on a desk" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Paper</span>
+          <h3>Predictors of IELTS writing band gain in twelve-week intensive courses</h3>
+          <p class="course-desc">Carter, E. and Whitfield, S. · Language Assessment Quarterly · a cohort study of 1,204 Peruvian candidates sitting between 2023 and 2026.</p>
+          <div class="course-meta"><span>2026</span><span>English</span><span>24 pp</span><span>ScienceDirect</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#journals">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="videos">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=760&q=75" alt="Recorded lecture playing on a laptop during a live online class" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Video</span>
+          <h3>Transformers from scratch: the full twelve-lecture series</h3>
+          <p class="course-desc">Dr. Andrés Quispe · recorded March to June 2026. Captioned in English and Spanish, with the notebooks published alongside each lecture.</p>
+          <div class="course-meta"><span>2026</span><span>English</span><span>21 h 40 min</span><span>Captioned</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="videos">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b?auto=format&fit=crop&w=760&q=75" alt="Instructor delivering a recorded online session from a studio desk" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Video</span>
+          <h3>Pronunciation clinic: the eleven sounds Spanish speakers lose</h3>
+          <p class="course-desc">Hannah Ross and Daniel O'Connor · 2025. Slow-motion articulation, minimal pairs and a self-recording exercise at the end of every episode.</p>
+          <div class="course-meta"><span>2025</span><span>English</span><span>6 h 15 min</span><span>Captioned</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="videos">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=760&q=75" alt="Developer screen recording of a coding workshop" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Video</span>
+          <h3>Power BI end to end: modelling a Peruvian retail dataset</h3>
+          <p class="course-desc">Ing. Marco Ferreyra · 2026. Eight sessions using an anonymised 4.2 million row dataset donated by a Lima retail group.</p>
+          <div class="course-meta"><span>2026</span><span>Español</span><span>9 h 05 min</span><span>Dataset included</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="pdfs">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=760&q=75" alt="Printed handbook and spreadsheets laid out on a desk" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge badge-neutral">PDF</span>
+          <h3>Institutional Thesis and Dissertation Handbook, 2026 edition</h3>
+          <p class="course-desc">Vice-Rectorate for Research · the authoritative format, citation and defence rules for every bachelor, master and doctoral candidate.</p>
+          <div class="course-meta"><span>2026</span><span>Español</span><span>96 pp</span><span>4.8 MB</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#downloads">Download</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="pdfs">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=760&q=75" alt="Academic writing guide open beside a notebook" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge badge-neutral">PDF</span>
+          <h3>APA 7 quick reference for Peruvian sources</h3>
+          <p class="course-desc">Library Services · how to cite INEI datasets, SUNAT rulings, regional ordinances and Spanish-language theses in APA seventh edition.</p>
+          <div class="course-meta"><span>2026</span><span>Español</span><span>24 pp</span><span>1.2 MB</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#downloads">Download</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="pdfs">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=760&q=75" alt="Study group reviewing printed course materials" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge badge-neutral">PDF</span>
+          <h3>CEFR self-assessment grid and study planner</h3>
+          <p class="course-desc">School of English · the Council of Europe descriptors for A1 to C2 alongside a sixteen-week planner you can print or fill in on screen.</p>
+          <div class="course-meta"><span>2026</span><span>Bilingual</span><span>12 pp</span><span>0.9 MB</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#downloads">Download</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="magazines">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=760&q=75" alt="Technology magazine issue displayed on a tablet" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Magazine</span>
+          <h3>MIT Technology Review — full archive</h3>
+          <p class="course-desc">MIT · every issue from 1998 to the current month, delivered the day it publishes. Institutional subscription, no personal account required.</p>
+          <div class="course-meta"><span>1998–2026</span><span>English</span><span>Bi-monthly</span><span>Unlimited</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="magazines">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=760&q=75" alt="Business magazine and newspapers on a campus reading table" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Magazine</span>
+          <h3>Harvard Business Review — Spanish and English editions</h3>
+          <p class="course-desc">Harvard Business Publishing · current issue plus the ten-year archive, including the case reprints used in the Executive MBA.</p>
+          <div class="course-meta"><span>2016–2026</span><span>Bilingual</span><span>Monthly</span><span>Unlimited</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="journals">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=760&q=75" alt="Abstract network of connected research nodes" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Journal</span>
+          <h3>IEEE Transactions on Learning Technologies</h3>
+          <p class="course-desc">IEEE Education Society · quarterly, delivered through IEEE Xplore. Complete run from volume 1 to the current issue, with early access articles.</p>
+          <div class="course-meta"><span>2008–2026</span><span>English</span><span>Quarterly</span><span>ISSN 1939-1382</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#journals">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card" data-tags="journals">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=760&q=75" alt="Bound journal volumes on the shelves of an academic library" loading="lazy" decoding="async"></div>
+        <div class="course-body">
+          <span class="badge">Journal</span>
+          <h3>Revista Peruana de Medicina Experimental y Salud Pública</h3>
+          <p class="course-desc">Instituto Nacional de Salud · hosted on SciELO Perú and indexed in Scopus. Core title for health sciences and public policy candidates.</p>
+          <div class="course-meta"><span>1997–2026</span><span>Español</span><span>Quarterly</span><span>ISSN 1726-4634</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="#journals">Open</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNALS ================= -->
+<section class="section" id="journals">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Research databases</span>
+      <h2>Six international databases, included with your credentials</h2>
+      <p class="lead">Six hundred and twenty journal subscriptions reach you through the platforms below. Sign in once with your institutional account and every paywall in these collections opens, on campus or at home.</p>
+    </div>
+
+    <div class="grid g3">
+      <div class="card card-pad-lg card-hover reveal">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg></div>
+        <h3 style="margin-block:1rem .5rem;font-size:1.25rem">IEEE Xplore</h3>
+        <p style="font-size:.9rem">Six million documents in electrical engineering, computer science and electronics, including every IEEE conference proceeding and standard.</p>
+        <hr class="divider" style="margin-block:20px">
+        <div class="course-meta"><span>Engineering</span><span>Computing</span><span>Standards</span></div>
+        <a class="btn btn-soft btn-sm mt-16" href="virtual-campus.html">Open IEEE Xplore</a>
+      </div>
+
+      <div class="card card-pad-lg card-hover reveal" data-d="1">
+        <div class="icon-tile navy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 012-2h13v18H6a2 2 0 01-2-1.5z"/><path d="M8 7h7M8 11h7"/></svg></div>
+        <h3 style="margin-block:1rem .5rem;font-size:1.25rem">JSTOR</h3>
+        <p style="font-size:.9rem">Twelve million articles, book chapters and primary sources across the humanities and social sciences, with archives reaching back to the nineteenth century.</p>
+        <hr class="divider" style="margin-block:20px">
+        <div class="course-meta"><span>Humanities</span><span>Social sciences</span><span>Archives</span></div>
+        <a class="btn btn-soft btn-sm mt-16" href="virtual-campus.html">Open JSTOR</a>
+      </div>
+
+      <div class="card card-pad-lg card-hover reveal" data-d="2">
+        <div class="icon-tile teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg></div>
+        <h3 style="margin-block:1rem .5rem;font-size:1.25rem">ScienceDirect</h3>
+        <p style="font-size:.9rem">Elsevier's full-text platform: 2,700 peer-reviewed journals and 48,000 book titles across the physical, life, health and social sciences.</p>
+        <hr class="divider" style="margin-block:20px">
+        <div class="course-meta"><span>Sciences</span><span>Health</span><span>Engineering</span></div>
+        <a class="btn btn-soft btn-sm mt-16" href="virtual-campus.html">Open ScienceDirect</a>
+      </div>
+
+      <div class="card card-pad-lg card-hover reveal" data-d="3">
+        <div class="icon-tile gold" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 6-8 12.5-8 12.5S4 16.5 4 10.5a8 8 0 1116 0z"/><circle cx="12" cy="10.3" r="2.8"/></svg></div>
+        <h3 style="margin-block:1rem .5rem;font-size:1.25rem">SciELO</h3>
+        <p style="font-size:.9rem">The open-access library of Latin America, the Caribbean, Spain and Portugal. Indispensable for regional research and for citing Peruvian scholarship correctly.</p>
+        <hr class="divider" style="margin-block:20px">
+        <div class="course-meta"><span>Latin America</span><span>Open access</span><span>Español</span></div>
+        <a class="btn btn-soft btn-sm mt-16" href="virtual-campus.html">Open SciELO</a>
+      </div>
+
+      <div class="card card-pad-lg card-hover reveal" data-d="4">
+        <div class="icon-tile violet" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+        <h3 style="margin-block:1rem .5rem;font-size:1.25rem">ProQuest</h3>
+        <p style="font-size:.9rem">Dissertations and theses from 4,000 institutions worldwide, plus newspaper and trade archives that our doctoral candidates use for literature reviews.</p>
+        <hr class="divider" style="margin-block:20px">
+        <div class="course-meta"><span>Dissertations</span><span>News archives</span><span>Business</span></div>
+        <a class="btn btn-soft btn-sm mt-16" href="virtual-campus.html">Open ProQuest</a>
+      </div>
+
+      <div class="card card-pad-lg card-hover reveal" data-d="5">
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4L2 9l10 5 10-5-10-5z"/><path d="M6 11.5V17c0 1.4 2.7 2.6 6 2.6s6-1.2 6-2.6v-5.5"/></svg></div>
+        <h3 style="margin-block:1rem .5rem;font-size:1.25rem">Cambridge Core</h3>
+        <p style="font-size:.9rem">Cambridge University Press journals and monographs, including the applied linguistics and language testing titles behind our English curriculum.</p>
+        <hr class="divider" style="margin-block:20px">
+        <div class="course-meta"><span>Linguistics</span><span>Education</span><span>Law</span></div>
+        <a class="btn btn-soft btn-sm mt-16" href="virtual-campus.html">Open Cambridge Core</a>
+      </div>
+    </div>
+
+    <div class="table-wrap mt-48 reveal">
+      <table>
+        <thead><tr><th>Database</th><th>Titles included</th><th>Coverage</th><th>Off-campus access</th></tr></thead>
+        <tbody>
+          <tr><td><strong>IEEE Xplore</strong></td><td>212 journals · 1,900 conferences</td><td>1963 – present</td><td>Institutional sign-in</td></tr>
+          <tr><td><strong>JSTOR</strong></td><td>2,800 journals</td><td>1846 – present</td><td>Institutional sign-in</td></tr>
+          <tr><td><strong>ScienceDirect</strong></td><td>2,700 journals · 48,000 books</td><td>1823 – present</td><td>Institutional sign-in</td></tr>
+          <tr><td><strong>SciELO</strong></td><td>1,600 journals</td><td>1997 – present</td><td>Open, no sign-in required</td></tr>
+          <tr><td><strong>ProQuest</strong></td><td>5.4 million dissertations</td><td>1861 – present</td><td>Institutional sign-in</td></tr>
+          <tr><td><strong>Cambridge Core</strong></td><td>420 journals · 38,000 books</td><td>1770 – present</td><td>Institutional sign-in</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUDIO ================= -->
+<section class="section section-alt" id="audio">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Listening collection</span>
+      <h2>Nine thousand four hundred audiobooks, in English and Spanish</h2>
+      <p class="lead">Built for the commute. Every title streams from the virtual campus app, downloads for offline listening, and the English collection carries CEFR level tags so you can match a book to your ability rather than your ambition.</p>
+    </div>
+
+    <div class="grid g4">
+      <article class="card card-hover course-card reveal">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=760&q=75" alt="Classic literature audiobook cover on a library shelf" loading="lazy" decoding="async"><span class="badge badge-gold lvl">B2</span></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiobook</span>
+          <h3 style="font-size:1.05rem">Animal Farm</h3>
+          <p class="course-desc">George Orwell, read by Simon Callow · 2013. Our most borrowed graded listening title four years running.</p>
+          <div class="course-meta"><span>3 h 11 min</span><span>English</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card reveal" data-d="1">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=760&q=75" alt="Students listening to recorded lectures on campus" loading="lazy" decoding="async"><span class="badge badge-gold lvl">C1</span></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiobook</span>
+          <h3 style="font-size:1.05rem">Sapiens: A Brief History of Humankind</h3>
+          <p class="course-desc">Yuval Noah Harari, read by Derek Perkins · 2015. Paired with the C1 discussion pack in Conversation Club.</p>
+          <div class="course-meta"><span>15 h 18 min</span><span>English</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card reveal" data-d="2">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=760&q=75" alt="Spanish language novels arranged on a shelf" loading="lazy" decoding="async"><span class="badge badge-gold lvl">Español</span></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiolibro</span>
+          <h3 style="font-size:1.05rem">Cien años de soledad</h3>
+          <p class="course-desc">Gabriel García Márquez, narrado por Gustavo Bonfigli · 2020. Lectura base del módulo de Literatura Latinoamericana.</p>
+          <div class="course-meta"><span>19 h 56 min</span><span>Español</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+
+      <article class="card card-hover course-card reveal" data-d="3">
+        <div class="course-media"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=760&q=75" alt="Professional listening to a business audiobook while working" loading="lazy" decoding="async"><span class="badge badge-gold lvl">B2</span></div>
+        <div class="course-body">
+          <span class="badge badge-gold">Audiobook</span>
+          <h3 style="font-size:1.05rem">The Lean Startup</h3>
+          <p class="course-desc">Eric Ries, read by the author · 2011. Set listening for the Entrepreneurship and Innovation elective.</p>
+          <div class="course-meta"><span>8 h 38 min</span><span>English</span></div>
+          <div class="course-actions"><a class="btn btn-soft btn-sm btn-block" href="virtual-campus.html">Open</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid g3 mt-48">
+      <div class="card card-pad reveal">
+        <span class="badge badge-green">CEFR tagged</span>
+        <h3 style="margin-block:.8rem .4rem;font-size:1.15rem">Listen at your level</h3>
+        <p style="font-size:.9rem">Every English title carries an A2 to C2 tag agreed by two instructors, so you can find a book you will finish rather than one you will abandon in chapter three.</p>
+      </div>
+      <div class="card card-pad reveal" data-d="1">
+        <span class="badge badge-green">Offline</span>
+        <h3 style="margin-block:.8rem .4rem;font-size:1.15rem">Download for the commute</h3>
+        <p style="font-size:.9rem">Up to twelve titles held offline on two devices at once. Playback speed, sleep timer and synchronised bookmarks across phone, tablet and desktop.</p>
+      </div>
+      <div class="card card-pad reveal" data-d="2">
+        <span class="badge badge-green">Transcripts</span>
+        <h3 style="margin-block:.8rem .4rem;font-size:1.15rem">Read while you listen</h3>
+        <p style="font-size:.9rem">Four thousand titles include a synchronised transcript, which our instructors regard as the single most effective listening exercise we offer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOWNLOADS ================= -->
+<section class="section" id="downloads">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Downloads centre</span>
+      <h2>The documents students ask for most</h2>
+      <p class="lead">Handbooks, templates, past papers and datasets, kept current by Library Services. Everything here is free to download and free to redistribute inside the institution.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr><th>Resource</th><th>Issued by</th><th>Format</th><th>Size</th><th>Updated</th><th>Download</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Institutional Thesis and Dissertation Handbook 2026</strong></td>
+            <td>Vice-Rectorate for Research</td><td>PDF · 96 pp</td><td>4.8 MB</td><td>02 Jul 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Thesis template, APA 7, Word and LaTeX</strong></td>
+            <td>Vice-Rectorate for Research</td><td>ZIP · DOCX + TEX</td><td>2.1 MB</td><td>02 Jul 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>CEFR self-assessment grid and sixteen-week planner</strong></td>
+            <td>School of English</td><td>PDF · 12 pp</td><td>0.9 MB</td><td>18 Jun 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>IELTS Academic practice set, four complete papers</strong></td>
+            <td>School of English</td><td>PDF · 148 pp</td><td>11.4 MB</td><td>18 Jun 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Cambridge C1 Advanced listening collection</strong></td>
+            <td>School of English</td><td>ZIP · MP3 + transcripts</td><td>1.3 GB</td><td>11 Jun 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>APA 7 quick reference for Peruvian sources</strong></td>
+            <td>Library Services</td><td>PDF · 24 pp</td><td>1.2 MB</td><td>28 May 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Lima retail dataset, anonymised, 4.2 million rows</strong></td>
+            <td>School of Computing</td><td>CSV · gzip</td><td>318 MB</td><td>21 May 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Python for Data Analysis notebook pack</strong></td>
+            <td>School of Computing</td><td>ZIP · IPYNB</td><td>46 MB</td><td>21 May 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Cybersecurity home lab build guide, third edition</strong></td>
+            <td>School of Computing</td><td>PDF · 74 pp</td><td>8.7 MB</td><td>14 May 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Curriculum vitae templates for the Peruvian market</strong></td>
+            <td>Career Centre</td><td>ZIP · DOCX + PDF</td><td>3.4 MB</td><td>30 Apr 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Academic calendar 2026–2027, all seven campuses</strong></td>
+            <td>Registrar</td><td>PDF · 8 pp</td><td>0.6 MB</td><td>15 Apr 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+          <tr>
+            <td><strong>Library citation and plagiarism policy</strong></td>
+            <td>Library Services</td><td>PDF · 18 pp</td><td>1.0 MB</td><td>15 Apr 2026</td>
+            <td><a class="btn btn-soft btn-sm" href="#downloads">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="muted mt-24 reveal" style="font-size:.86rem">Downloads are licensed for study and teaching within Instituto y Universidad Luis Urbiola. If a file you need is missing, write to biblioteca@luisurbiola.edu.pe and Library Services will answer within one working day.</p>
+  </div>
+</section>
+
+<!-- ================= PHYSICAL LIBRARY ================= -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="feature-row">
+      <div class="reveal">
+        <span class="eyebrow">Miraflores headquarters</span>
+        <h2 style="margin-block:.6rem 1rem">Four floors, and a chair with your name on it</h2>
+        <p class="lead">The digital collection is the larger half of the library, but it is not the whole of it. Av. José Larco 1301 holds four floors of reading rooms, printed reserve stock and the quietest study space in the district.</p>
+        <ul class="check-list mt-24">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Four floors</strong> — ground floor for periodicals and returns, first for reserve stock, second and third for silent study.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>320 study seats</strong> — every desk with power, and 96 of them bookable in advance from the student portal.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>24 group rooms</strong> — four to eight people, whiteboard and screen, free in two-hour blocks.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Research help desk</strong> — three librarians on the second floor, no appointment needed, plus scheduled clinics before every submission deadline.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Alumni are welcome</strong> — bring your graduate card to reception and the turnstile opens, thirty-two years after you left.</span></li>
+        </ul>
+
+        <div class="table-wrap mt-32">
+          <table>
+            <thead><tr><th>Days</th><th>Opening hours</th><th>Reserve desk</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Monday to Friday</strong></td><td>07:00 – 22:00</td><td>08:00 – 21:00</td></tr>
+              <tr><td><strong>Saturday</strong></td><td>08:00 – 18:00</td><td>09:00 – 17:00</td></tr>
+              <tr><td><strong>Sunday and public holidays</strong></td><td>Closed on site</td><td>Digital library open</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="flex wrap gap-12 mt-32">
+          <a class="btn btn-primary" href="contact.html#appointment">Book a study room</a>
+          <a class="btn btn-ghost" href="contact.html">Directions and parking</a>
+        </div>
+      </div>
+
+      <div class="fr-media reveal" data-d="1">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=1100&q=75" alt="Reading room of the Miraflores library with tall shelves and study desks" loading="lazy" decoding="async">
+        <div class="fr-float">
+          <div class="icon-tile gold" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/></svg></div>
+          <div><strong style="display:block;font-size:.95rem">Mon–Fri 07:00–22:00 · Sat 08:00–18:00</strong><span style="font-size:.82rem;color:var(--text-3)">Av. José Larco 1301, Miraflores, Lima 15074.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div class="grid g2" style="align-items:center;gap:40px">
+        <div>
+          <span class="eyebrow" style="color:var(--gold-300)">Free for students and alumni, for life</span>
+          <h2 style="margin-block:.7rem 1rem" class="text-balance">Your library card never expires</h2>
+          <p class="lead" style="color:rgba(255,255,255,.8)">More than fifty thousand graduates still hold active credentials. Enrol on any programme and the whole collection opens on the first day of class — 128,000 titles, six research databases and the reading rooms in Miraflores.</p>
+          <div class="flex wrap gap-12 mt-32">
+            <a class="btn btn-gold btn-lg" href="admissions.html#apply">Start your application</a>
+            <a class="btn btn-glass btn-lg" href="student-portal.html">Sign in to the library</a>
+          </div>
+        </div>
+        <div class="glass card-pad-lg" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.20)">
+          <h3 style="color:#fff;font-size:1.15rem;margin-bottom:1rem">Recovering alumni access</h3>
+          <ul class="timeline" style="padding-left:30px">
+            <li><span class="yr" style="color:var(--gold-300)">STEP 1</span><h4 style="color:#fff;font-size:1rem">Find your student code</h4><p style="color:rgba(255,255,255,.68);font-size:.86rem">It is printed on your degree certificate and on any transcript we issued.</p></li>
+            <li><span class="yr" style="color:var(--gold-300)">STEP 2</span><h4 style="color:#fff;font-size:1rem">Write to Library Services</h4><p style="color:rgba(255,255,255,.68);font-size:.86rem">biblioteca@luisurbiola.edu.pe or +51 (1) 705 4820, extension 214.</p></li>
+            <li><span class="yr" style="color:var(--gold-300)">STEP 3</span><h4 style="color:#fff;font-size:1rem">Access restored the same day</h4><p style="color:rgba(255,255,255,.68);font-size:.86rem">Full catalogue, all six databases and the reading rooms, at no cost.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer-mount"></div>
+</body>
+</html>

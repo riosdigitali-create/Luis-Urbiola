@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /student-portal.html
+Disallow: /teacher-portal.html
+Disallow: /admin.html
+
+Sitemap: https://www.luisurbiola.edu.pe/sitemap.xml

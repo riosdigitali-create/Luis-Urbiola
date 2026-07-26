@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Administration Panel | Luis Urbiola</title>
+<meta name="description" content="Administration: students, teachers, programmes, payments, scholarships, reports, analytics, CRM, email marketing and notifications.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230057D9'/%3E%3Ctext x='32' y='42' font-family='Helvetica,Arial' font-size='27' font-weight='bold' fill='white' text-anchor='middle'%3ELU%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('lu-theme');if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="admin">
+<div id="site-header-mount"></div>
+
+<main id="main">
+<div class="dash">
+  <aside class="dash-side" aria-label="Admin sections">
+    <div class="flex gap-12" style="align-items:center;padding:6px 10px 14px">
+      <span class="brand-mark" aria-hidden="true">LU</span>
+      <div><strong style="font-size:.9rem;display:block">Administration</strong><span class="muted" style="font-size:.74rem">Role: Registrar</span></div>
+    </div>
+    <div class="ds-h">People</div>
+    <a class="active" href="#overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Overview</a>
+    <a href="#students"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>Students</a>
+    <a href="#teachers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4L2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>Teachers</a>
+    <div class="ds-h">Academic</div>
+    <a href="#programs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8"/></svg>Programmes</a>
+    <a href="#scholarships"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.5L7 22l5-2.5L17 22l-1.5-8.5"/></svg>Scholarships</a>
+    <div class="ds-h">Business</div>
+    <a href="#payments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 10h19"/></svg>Payments</a>
+    <a href="#crm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20v-2a4 4 0 014-4h8a4 4 0 014 4v2"/><circle cx="12" cy="7" r="4"/></svg>CRM &amp; leads</a>
+    <a href="#marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email marketing</a>
+    <a href="#analytics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>Reports &amp; analytics</a>
+    <a href="#audit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l8 4v6c0 4.4-3.4 7.4-8 8-4.6-.6-8-3.6-8-8V7z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>Security &amp; audit</a>
+    <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 4h4v16h-4"/><path d="M11 8l-4 4 4 4M7 12h10"/></svg>Sign out</a>
+  </aside>
+
+  <div class="dash-main" id="overview">
+    <div class="dash-top">
+      <div><span class="eyebrow">Period 2026-II · updated 13 Aug, 19:42</span><h2 style="font-size:1.9rem;margin-top:.4rem">Institutional overview</h2></div>
+      <div class="flex wrap gap-8"><a class="btn btn-ghost btn-sm" href="#analytics">Export report</a><a class="btn btn-primary btn-sm" href="#crm">Open CRM</a></div>
+    </div>
+
+    <div class="grid g5" style="gap:18px;margin-bottom:28px">
+      <div class="kpi"><div class="k-l">Active students</div><div class="k-v"><span data-count="12480">0</span></div><div class="k-d k-up">▲ 8.4% YoY</div></div>
+      <div class="kpi"><div class="k-l">Faculty</div><div class="k-v"><span data-count="340">0</span></div><div class="k-d k-up">▲ 22</div></div>
+      <div class="kpi"><div class="k-l">Revenue (month)</div><div class="k-v">S/ 4.8M</div><div class="k-d k-up">▲ 6.1%</div></div>
+      <div class="kpi"><div class="k-l">Collection rate</div><div class="k-v">97.2%</div><div class="k-d k-up">▲ 1.3%</div></div>
+      <div class="kpi"><div class="k-l">Open leads</div><div class="k-v"><span data-count="1842">0</span></div><div class="k-d k-down">▼ 4.0%</div></div>
+    </div>
+
+    <div class="grid g2" style="align-items:start;gap:26px;margin-bottom:26px">
+      <section id="analytics" class="card card-pad">
+        <div class="between" style="margin-bottom:24px"><h3 style="font-size:1.2rem">Enrolments by month</h3><span class="badge badge-green">▲ 8.4%</span></div>
+        <div class="bars" style="margin-bottom:34px">
+          <div style="height:48%"><span>Feb</span></div><div style="height:92%"><span>Mar</span></div><div style="height:61%"><span>Apr</span></div>
+          <div style="height:54%"><span>May</span></div><div style="height:47%"><span>Jun</span></div><div style="height:58%"><span>Jul</span></div>
+          <div style="height:88%"><span>Aug</span></div>
+        </div>
+        <div class="grid g3 tc">
+          <div><div class="k-v" style="font-size:1.4rem">6,120</div><div class="k-l">English</div></div>
+          <div><div class="k-v" style="font-size:1.4rem">3,940</div><div class="k-l">Computing</div></div>
+          <div><div class="k-v" style="font-size:1.4rem">2,420</div><div class="k-l">University</div></div>
+        </div>
+      </section>
+
+      <section class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Institutional health</h3><span class="badge">Live</span></div>
+        <div class="stack gap-16">
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Retention (term over term)</span><strong style="font-size:.87rem">92%</strong></div><div class="progress"><i style="width:92%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Student satisfaction</span><strong style="font-size:.87rem">4.9 / 5</strong></div><div class="progress gold"><i style="width:98%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Employment within 6 months</span><strong style="font-size:.87rem">95%</strong></div><div class="progress green"><i style="width:95%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Classroom occupancy</span><strong style="font-size:.87rem">81%</strong></div><div class="progress"><i style="width:81%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Scholarship budget used</span><strong style="font-size:.87rem">73%</strong></div><div class="progress gold"><i style="width:73%"></i></div></div>
+        </div>
+      </section>
+    </div>
+
+    <section id="students" class="card card-pad" style="margin-bottom:26px">
+      <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.25rem">Manage students</h3><div class="flex gap-8"><input class="input btn-sm" type="search" placeholder="Search by name or code…" aria-label="Search students" style="width:230px;padding:.5rem .9rem"><a class="btn btn-primary btn-sm" href="#">Add student</a></div></div>
+      <div class="table-wrap" style="border:0">
+        <table>
+          <thead><tr><th>Code</th><th>Student</th><th>Programme</th><th>Term</th><th>Average</th><th>Balance</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">2023-14872</td><td><strong>Valeria Ñahui Quispe</strong></td><td>Systems Engineering</td><td>VII</td><td>17.4</td><td>S/ 0</td><td><span class="badge badge-green">Active</span></td></tr>
+            <tr><td class="mono">2024-20913</td><td><strong>Kevin Ordóñez Ruiz</strong></td><td>Full-Stack Web</td><td>—</td><td>17.0</td><td>S/ 620</td><td><span class="badge badge-green">Active</span></td></tr>
+            <tr><td class="mono">2022-10455</td><td><strong>Camila Prado León</strong></td><td>Business Administration</td><td>IX</td><td>15.5</td><td>S/ 1,240</td><td><span class="badge badge-gold">In arrears</span></td></tr>
+            <tr><td class="mono">2025-31820</td><td><strong>Diego Ramos Ttito</strong></td><td>English C1</td><td>—</td><td>13.5</td><td>S/ 0</td><td><span class="badge badge-green">Active</span></td></tr>
+            <tr><td class="mono">2021-08117</td><td><strong>Ana Lucía Vega Soto</strong></td><td>Psychology</td><td>X</td><td>19.3</td><td>S/ 0</td><td><span class="badge">Graduating</span></td></tr>
+            <tr><td class="mono">2024-24506</td><td><strong>Jorge Villanueva Paz</strong></td><td>Executive MBA</td><td>III</td><td>18.1</td><td>S/ 3,150</td><td><span class="badge badge-green">Active</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid g2" style="align-items:start;gap:26px;margin-bottom:26px">
+      <section id="teachers" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Manage teachers</h3><a class="btn btn-soft btn-sm" href="#">Add</a></div>
+        <div class="table-wrap" style="border:0">
+          <table>
+            <thead><tr><th>Teacher</th><th>School</th><th>Courses</th><th>Rating</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Ing. Marco Ferreyra</strong></td><td>Computing</td><td>3</td><td>4.9</td></tr>
+              <tr><td><strong>Emily Carter, DELTA</strong></td><td>English</td><td>4</td><td>4.9</td></tr>
+              <tr><td><strong>Dr. Andrés Quispe</strong></td><td>Computing</td><td>2</td><td>5.0</td></tr>
+              <tr><td><strong>Mg. Paola Ríos</strong></td><td>Computing</td><td>3</td><td>4.9</td></tr>
+              <tr><td><strong>Dra. Lucía Ferrer</strong></td><td>University</td><td>2</td><td>4.8</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="programs" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Programmes</h3><span class="badge">512 active</span></div>
+        <div class="table-wrap" style="border:0">
+          <table>
+            <thead><tr><th>Programme</th><th>School</th><th>Cohorts</th><th>Fill rate</th></tr></thead>
+            <tbody>
+              <tr><td><strong>General English A1–C2</strong></td><td>English</td><td>84</td><td>93%</td></tr>
+              <tr><td><strong>IELTS preparation</strong></td><td>English</td><td>12</td><td>100%</td></tr>
+              <tr><td><strong>Artificial Intelligence &amp; ML</strong></td><td>Computing</td><td>6</td><td>100%</td></tr>
+              <tr><td><strong>Full-Stack Web</strong></td><td>Computing</td><td>9</td><td>96%</td></tr>
+              <tr><td><strong>Executive MBA</strong></td><td>University</td><td>2</td><td>88%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid g2" style="align-items:start;gap:26px;margin-bottom:26px">
+      <section id="payments" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Payments</h3><span class="badge badge-green">97.2% collected</span></div>
+        <div class="table-wrap" style="border:0">
+          <table>
+            <thead><tr><th>Reference</th><th>Student</th><th>Method</th><th>Amount</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="mono">PAY-88214</td><td>Valeria Ñahui</td><td>Visa · Stripe</td><td>S/ 620</td><td><span class="badge badge-green">Settled</span></td></tr>
+              <tr><td class="mono">PAY-88215</td><td>Kevin Ordóñez</td><td>Yape</td><td>S/ 620</td><td><span class="badge badge-green">Settled</span></td></tr>
+              <tr><td class="mono">PAY-88216</td><td>Camila Prado</td><td>Bank transfer</td><td>S/ 1,240</td><td><span class="badge badge-gold">Overdue</span></td></tr>
+              <tr><td class="mono">PAY-88217</td><td>Jorge Villanueva</td><td>Mastercard</td><td>S/ 3,150</td><td><span class="badge">Scheduled</span></td></tr>
+              <tr><td class="mono">PAY-88218</td><td>Alicorp S.A.A.</td><td>Invoice</td><td>S/ 42,800</td><td><span class="badge badge-green">Settled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="scholarships" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Scholarships</h3><span class="badge badge-gold">73% of budget</span></div>
+        <div class="stack gap-14">
+          <div class="between"><span style="font-size:.88rem">Academic Excellence</span><strong style="font-size:.88rem">412 awards</strong></div>
+          <div class="between"><span style="font-size:.88rem">First in Family</span><strong style="font-size:.88rem">906 awards</strong></div>
+          <div class="between"><span style="font-size:.88rem">Regional Talent</span><strong style="font-size:.88rem">318 awards</strong></div>
+          <div class="between"><span style="font-size:.88rem">Single-Parent Support</span><strong style="font-size:.88rem">241 awards</strong></div>
+          <div class="between"><span style="font-size:.88rem">Sport &amp; Culture</span><strong style="font-size:.88rem">96 awards</strong></div>
+          <div class="between"><span style="font-size:.88rem">Corporate Sponsorship</span><strong style="font-size:.88rem">1,104 awards</strong></div>
+          <hr class="divider" style="margin:6px 0">
+          <div class="between"><strong style="font-size:.9rem">Total students supported</strong><strong style="font-size:.9rem;color:var(--accent)">3,077 (40.1%)</strong></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid g2" style="align-items:start;gap:26px;margin-bottom:26px">
+      <section id="crm" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">CRM pipeline</h3><span class="badge">1,842 open</span></div>
+        <div class="stack gap-14">
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">New enquiry</span><strong style="font-size:.87rem">742</strong></div><div class="progress"><i style="width:100%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Advising booked</span><strong style="font-size:.87rem">514</strong></div><div class="progress"><i style="width:69%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Assessment taken</span><strong style="font-size:.87rem">361</strong></div><div class="progress gold"><i style="width:49%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Documents submitted</span><strong style="font-size:.87rem">158</strong></div><div class="progress gold"><i style="width:21%"></i></div></div>
+          <div><div class="between" style="margin-bottom:6px"><span style="font-size:.87rem">Enrolled</span><strong style="font-size:.87rem">67</strong></div><div class="progress green"><i style="width:9%"></i></div></div>
+        </div>
+      </section>
+
+      <section id="marketing" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Email marketing</h3><a class="btn btn-soft btn-sm" href="#">New campaign</a></div>
+        <div class="table-wrap" style="border:0">
+          <table>
+            <thead><tr><th>Campaign</th><th>Sent</th><th>Open</th><th>Click</th></tr></thead>
+            <tbody>
+              <tr><td><strong>March intake — final call</strong></td><td>48,210</td><td>41.2%</td><td>9.8%</td></tr>
+              <tr><td><strong>Open Day 09 August</strong></td><td>52,904</td><td>38.7%</td><td>11.4%</td></tr>
+              <tr><td><strong>Alumni AI upskilling</strong></td><td>21,663</td><td>46.1%</td><td>14.2%</td></tr>
+              <tr><td><strong>Scholarship deadline</strong></td><td>33,180</td><td>44.9%</td><td>12.7%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <section id="audit" class="card card-pad">
+      <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Security &amp; audit log</h3><span class="badge badge-green">All systems normal</span></div>
+      <div class="grid g4" style="gap:16px;margin-bottom:20px">
+        <div class="card card-pad" style="box-shadow:none;padding:16px"><strong style="font-size:.87rem">HTTPS / TLS 1.3</strong><p style="font-size:.79rem;margin-top:.2rem">Enforced, HSTS preloaded</p></div>
+        <div class="card card-pad" style="box-shadow:none;padding:16px"><strong style="font-size:.87rem">Role-based access</strong><p style="font-size:.79rem;margin-top:.2rem">7 roles · 38 permissions</p></div>
+        <div class="card card-pad" style="box-shadow:none;padding:16px"><strong style="font-size:.87rem">Encryption at rest</strong><p style="font-size:.79rem;margin-top:.2rem">AES-256, keys rotated 90 d</p></div>
+        <div class="card card-pad" style="box-shadow:none;padding:16px"><strong style="font-size:.87rem">Backups</strong><p style="font-size:.79rem;margin-top:.2rem">Hourly · last 02:00, verified</p></div>
+      </div>
+      <div class="table-wrap" style="border:0">
+        <table>
+          <thead><tr><th>Time</th><th>Actor</th><th>Action</th><th>Entity</th><th>IP</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">19:38</td><td>registrar@lu</td><td>Updated grade record</td><td>2022-10455</td><td class="mono">190.12.44.8</td></tr>
+            <tr><td class="mono">18:52</td><td>finance@lu</td><td>Issued receipt</td><td>PAY-88214</td><td class="mono">190.12.44.3</td></tr>
+            <tr><td class="mono">17:20</td><td>m.ferreyra@lu</td><td>Published grades</td><td>CS-2026-B</td><td class="mono">181.65.19.77</td></tr>
+            <tr><td class="mono">16:04</td><td>admin@lu</td><td>Granted role: Coordinator</td><td>e.carter@lu</td><td class="mono">190.12.44.1</td></tr>
+            <tr><td class="mono">14:11</td><td>system</td><td>Backup verified</td><td>db-primary</td><td class="mono">internal</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+
+<div id="site-footer-mount"></div>
+</body>
+</html>

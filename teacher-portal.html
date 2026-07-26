@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teacher Portal | Luis Urbiola</title>
+<meta name="description" content="Teacher portal: create courses, upload videos, set assignments, record attendance, publish grades, message students and review analytics.">
+<meta name="robots" content="noindex,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230057D9'/%3E%3Ctext x='32' y='42' font-family='Helvetica,Arial' font-size='27' font-weight='bold' fill='white' text-anchor='middle'%3ELU%3C/text%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('lu-theme');if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="teacher">
+<div id="site-header-mount"></div>
+
+<main id="main">
+<div class="dash">
+  <aside class="dash-side" aria-label="Portal sections">
+    <div class="flex gap-12" style="align-items:center;padding:6px 10px 14px">
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=75" alt="Marco Ferreyra" loading="lazy" decoding="async" style="width:42px;height:42px;border-radius:50%;object-fit:cover">
+      <div><strong style="font-size:.9rem;display:block">Ing. Marco Ferreyra</strong><span class="muted" style="font-size:.74rem">School of Computing</span></div>
+    </div>
+    <div class="ds-h">Teaching</div>
+    <a class="active" href="#overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Overview</a>
+    <a href="#courses"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8"/></svg>My courses</a>
+    <a href="#builder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Create course</a>
+    <a href="#content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M21 8l-6 4 6 4z"/></svg>Videos &amp; content</a>
+    <div class="ds-h">Assessment</div>
+    <a href="#assignments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 3h9l5 5v13H6z"/><path d="M9 13h6"/></svg>Assignments</a>
+    <a href="#grades"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/></svg>Grades</a>
+    <a href="#attendance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Attendance</a>
+    <div class="ds-h">Other</div>
+    <a href="#messages"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Messages</a>
+    <a href="#analytics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>Analytics</a>
+    <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 4h4v16h-4"/><path d="M11 8l-4 4 4 4M7 12h10"/></svg>Sign out</a>
+  </aside>
+
+  <div class="dash-main" id="overview">
+    <div class="dash-top">
+      <div><span class="eyebrow">Semester II · 2026</span><h2 style="font-size:1.9rem;margin-top:.4rem">Good evening, Marco</h2><p style="font-size:.92rem">18 submissions awaiting your feedback. Next class in 42 minutes.</p></div>
+      <div class="flex wrap gap-8"><a class="btn btn-ghost btn-sm" href="#builder">New course</a><a class="btn btn-primary btn-sm" href="#">Start class</a></div>
+    </div>
+
+    <div class="grid g4" style="margin-bottom:28px">
+      <div class="kpi"><div class="k-l">Active students</div><div class="k-v">148</div><div class="k-d k-up">▲ 12 this term</div></div>
+      <div class="kpi"><div class="k-l">Pending reviews</div><div class="k-v">18</div><div class="k-d k-down">▼ 6 today</div></div>
+      <div class="kpi"><div class="k-l">Course rating</div><div class="k-v">4.9</div><div class="k-d k-up">▲ 0.1</div></div>
+      <div class="kpi"><div class="k-l">Completion rate</div><div class="k-v">91%</div><div class="k-d k-up">▲ 4%</div></div>
+    </div>
+
+    <section id="courses" class="card card-pad" style="margin-bottom:26px">
+      <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.25rem">My courses</h3><span class="badge">3 active · 1 draft</span></div>
+      <div class="table-wrap" style="border:0">
+        <table>
+          <thead><tr><th>Course</th><th>Cohort</th><th>Students</th><th>Progress</th><th>Rating</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Full-Stack Web: React &amp; Next.js</strong></td><td>CS-2026-B</td><td>16</td><td>74%</td><td>4.9</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Python — Zero to Professional</strong></td><td>CS-2026-A</td><td>16</td><td>52%</td><td>4.9</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Cloud Computing &amp; DevOps</strong></td><td>CS-2026-C</td><td>16</td><td>33%</td><td>4.8</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Advanced TypeScript Patterns</strong></td><td>—</td><td>0</td><td>—</td><td>—</td><td><span class="badge badge-gold">Draft</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid g2" style="align-items:start;gap:26px;margin-bottom:26px">
+      <section id="builder" class="card card-pad">
+        <h3 style="font-size:1.2rem;margin-bottom:18px">Create a course</h3>
+        <form onsubmit="return LU.fakeSubmit(this,'Course draft created and sent for academic review.')">
+          <div class="field"><label for="c1">Course title</label><input class="input" id="c1" type="text" placeholder="Advanced TypeScript Patterns"></div>
+          <div class="grid g2" style="gap:0 16px">
+            <div class="field"><label for="c2">School</label><select class="select" id="c2"><option>Computing &amp; Technology</option><option>English</option><option>University</option></select></div>
+            <div class="field"><label for="c3">Level</label><select class="select" id="c3"><option>Beginner</option><option>Intermediate</option><option>Advanced</option><option>Professional</option></select></div>
+          </div>
+          <div class="grid g2" style="gap:0 16px">
+            <div class="field"><label for="c4">Duration (weeks)</label><input class="input" id="c4" type="number" value="16"></div>
+            <div class="field"><label for="c5">Max students</label><input class="input" id="c5" type="number" value="16"></div>
+          </div>
+          <div class="field"><label for="c6">Description</label><textarea class="textarea" id="c6" placeholder="What students will build and be able to do…" style="min-height:96px"></textarea></div>
+          <button class="btn btn-primary" type="submit">Create draft</button>
+        </form>
+      </section>
+
+      <section id="content" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Videos &amp; content</h3><a class="btn btn-soft btn-sm" href="#">Upload</a></div>
+        <div class="stack gap-12">
+          <div class="between"><div><strong style="font-size:.89rem">Unit 7 — Server Components</strong><div class="muted" style="font-size:.77rem">42:18 · published 04 Aug · 148 views</div></div><span class="badge badge-green">Published</span></div>
+          <hr class="divider" style="margin:0">
+          <div class="between"><div><strong style="font-size:.89rem">Unit 8 — Data fetching &amp; caching</strong><div class="muted" style="font-size:.77rem">38:02 · captions processing</div></div><span class="badge badge-gold">Processing</span></div>
+          <hr class="divider" style="margin:0">
+          <div class="between"><div><strong style="font-size:.89rem">Lab walkthrough — Prisma schema</strong><div class="muted" style="font-size:.77rem">21:44 · published 30 Jul · 132 views</div></div><span class="badge badge-green">Published</span></div>
+          <hr class="divider" style="margin:0">
+          <div class="between"><div><strong style="font-size:.89rem">Starter repository v3.2</strong><div class="muted" style="font-size:.77rem">ZIP · 4.8 MB · 141 downloads</div></div><span class="badge">Resource</span></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid g2" style="align-items:start;gap:26px;margin-bottom:26px">
+      <section id="assignments" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Submissions to review</h3><span class="badge badge-gold">18 pending</span></div>
+        <div class="table-wrap" style="border:0">
+          <table>
+            <thead><tr><th>Student</th><th>Assignment</th><th>Submitted</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><strong>Valeria Ñahui</strong></td><td>Server Components lab</td><td>2 h ago</td><td><a class="link-arrow" href="#">Review</a></td></tr>
+              <tr><td><strong>Kevin Ordóñez</strong></td><td>Server Components lab</td><td>5 h ago</td><td><a class="link-arrow" href="#">Review</a></td></tr>
+              <tr><td><strong>Camila Prado</strong></td><td>Prisma schema exercise</td><td>Yesterday</td><td><a class="link-arrow" href="#">Review</a></td></tr>
+              <tr><td><strong>Diego Ramos</strong></td><td>Stripe checkout project</td><td>Yesterday</td><td><a class="link-arrow" href="#">Review</a></td></tr>
+              <tr><td><strong>Ana Lucía Vega</strong></td><td>Server Components lab</td><td>2 days ago</td><td><a class="link-arrow" href="#">Review</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="attendance" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Attendance — CS-2026-B</h3><a class="btn btn-soft btn-sm" href="#">Open QR</a></div>
+        <div class="table-wrap" style="border:0">
+          <table>
+            <thead><tr><th>Student</th><th>Present</th><th>Absent</th><th>Rate</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Valeria Ñahui</strong></td><td>24</td><td>1</td><td>96%</td></tr>
+              <tr><td><strong>Kevin Ordóñez</strong></td><td>25</td><td>0</td><td>100%</td></tr>
+              <tr><td><strong>Camila Prado</strong></td><td>22</td><td>3</td><td>88%</td></tr>
+              <tr><td><strong>Diego Ramos</strong></td><td>19</td><td>6</td><td>76%</td></tr>
+              <tr><td><strong>Ana Lucía Vega</strong></td><td>25</td><td>0</td><td>100%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid g2" style="align-items:start;gap:26px">
+      <section id="analytics" class="card card-pad">
+        <div class="between" style="margin-bottom:24px"><h3 style="font-size:1.2rem">Weekly engagement</h3><span class="badge badge-green">▲ 12%</span></div>
+        <div class="bars" style="margin-bottom:34px">
+          <div style="height:52%"><span>W1</span></div><div style="height:64%"><span>W2</span></div><div style="height:58%"><span>W3</span></div>
+          <div style="height:76%"><span>W4</span></div><div style="height:70%"><span>W5</span></div><div style="height:88%"><span>W6</span></div>
+          <div style="height:82%"><span>W7</span></div><div style="height:95%"><span>W8</span></div>
+        </div>
+        <div class="grid g3 tc">
+          <div><div class="k-v" style="font-size:1.5rem">86%</div><div class="k-l">Video completion</div></div>
+          <div><div class="k-v" style="font-size:1.5rem">4.9</div><div class="k-l">Satisfaction</div></div>
+          <div><div class="k-v" style="font-size:1.5rem">2.1 d</div><div class="k-l">Avg. feedback time</div></div>
+        </div>
+      </section>
+
+      <section id="messages" class="card card-pad">
+        <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Messages</h3><span class="badge badge-gold">4 unread</span></div>
+        <div class="stack gap-16">
+          <div class="flex gap-12"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=75" alt="Valeria Ñahui" loading="lazy" decoding="async" style="width:38px;height:38px;border-radius:50%;object-fit:cover"><div><strong style="font-size:.88rem">Valeria Ñahui</strong><p style="font-size:.83rem">Should the cache revalidation be per-route or global for the final project?</p><span class="muted" style="font-size:.74rem">1 hour ago</span></div></div>
+          <div class="flex gap-12"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=75" alt="Academic office" loading="lazy" decoding="async" style="width:38px;height:38px;border-radius:50%;object-fit:cover"><div><strong style="font-size:.88rem">Academic Office</strong><p style="font-size:.83rem">Syllabus review for CS-2027 opens on 1 September. Please submit by the 15th.</p><span class="muted" style="font-size:.74rem">Yesterday</span></div></div>
+          <div class="flex gap-12"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=75" alt="Andrés Quispe" loading="lazy" decoding="async" style="width:38px;height:38px;border-radius:50%;object-fit:cover"><div><strong style="font-size:.88rem">Dr. Andrés Quispe</strong><p style="font-size:.83rem">Can your cohort join the AI hackathon jury on 26 September?</p><span class="muted" style="font-size:.74rem">03 Aug</span></div></div>
+        </div>
+      </section>
+    </div>
+
+    <section id="grades" class="card card-pad" style="margin-top:26px">
+      <div class="between" style="margin-bottom:18px"><h3 style="font-size:1.2rem">Publish grades — Full-Stack Web</h3><a class="btn btn-primary btn-sm" href="#">Publish all</a></div>
+      <div class="table-wrap" style="border:0">
+        <table>
+          <thead><tr><th>Student</th><th>Partial 1</th><th>Partial 2</th><th>Project</th><th>Average</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Valeria Ñahui</strong></td><td>18</td><td>17</td><td>19</td><td><strong>18.0</strong></td><td><span class="badge badge-green">Published</span></td></tr>
+            <tr><td><strong>Kevin Ordóñez</strong></td><td>16</td><td>18</td><td>17</td><td><strong>17.0</strong></td><td><span class="badge badge-green">Published</span></td></tr>
+            <tr><td><strong>Camila Prado</strong></td><td>15</td><td>16</td><td>—</td><td><strong>15.5</strong></td><td><span class="badge badge-gold">Draft</span></td></tr>
+            <tr><td><strong>Diego Ramos</strong></td><td>14</td><td>13</td><td>—</td><td><strong>13.5</strong></td><td><span class="badge badge-gold">Draft</span></td></tr>
+            <tr><td><strong>Ana Lucía Vega</strong></td><td>19</td><td>19</td><td>20</td><td><strong>19.3</strong></td><td><span class="badge badge-green">Published</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+
+<div id="site-footer-mount"></div>
+</body>
+</html>
