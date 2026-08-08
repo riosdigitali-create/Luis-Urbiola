@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ofertas de la semana - La Esquina</title>
+  <meta name="description" content="Promociones vigentes en despensa, limpieza, cafe y regreso a clases. Precios rebajados durante toda la semana.">
+  <meta name="theme-color" content="#FF5A1F">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ofertas de la semana - La Esquina">
+  <meta property="og:description" content="Promociones vigentes en despensa, limpieza, cafe y regreso a clases. Precios rebajados durante toda la semana.">
+  <meta property="og:locale" content="es_MX">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+/* ===== La Esquina — Abarrotes y Papelería ===== */
+:root{
+  --ink:#16181D; --ink-2:#4A4F5A; --ink-3:#868D9B;
+  --bg:#FFFFFF; --surface:#F6F7F9; --line:#E6E9EF;
+  --primary:#FF5A1F; --primary-dark:#E1440D; --primary-soft:#FFF1EA;
+  --green:#0EA968; --green-soft:#E7F8F0;
+  --yellow:#FFC94A;
+  --radius:16px; --radius-sm:10px; --radius-lg:24px;
+  --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
+  --shadow-lg:0 12px 40px rgba(16,24,40,.12);
+  --wrap:1200px; --nav-h:64px;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+h1,h2,h3,h4{line-height:1.15;margin:0;letter-spacing:-.02em;font-weight:800}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:16px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+
+/* ---- Topbar ---- */
+.topbar{background:var(--ink);color:#fff;font-size:.8rem}
+.topbar .wrap{display:flex;gap:16px;align-items:center;justify-content:center;min-height:36px;text-align:center}
+.topbar b{color:var(--yellow)}
+
+/* ---- Header ---- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr__in{display:flex;align-items:center;gap:14px;min-height:var(--nav-h)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;letter-spacing:-.03em;flex:none}
+.logo__mark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--primary),#FF8B4A);display:grid;place-items:center;color:#fff;font-size:1rem;flex:none}
+.logo small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:-2px}
+.nav{display:flex;gap:4px;margin-left:8px}
+.nav a{padding:9px 13px;border-radius:99px;font-weight:600;font-size:.9rem;color:var(--ink-2);transition:.15s}
+.nav a:hover{background:var(--surface);color:var(--ink)}
+.nav a[aria-current="page"]{background:var(--ink);color:#fff}
+.hdr__actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+.search{position:relative;flex:1;max-width:320px}
+.search input{width:100%;padding:10px 14px 10px 40px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:.9rem}
+.search input:focus{background:#fff;border-color:var(--ink-3);outline:none;box-shadow:0 0 0 3px var(--primary-soft)}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink-3)}
+.iconbtn{position:relative;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;cursor:pointer;transition:.15s}
+.iconbtn:hover{background:var(--surface)}
+.badge{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:99px;background:var(--primary);color:#fff;font-size:.68rem;font-weight:800;display:grid;place-items:center;border:2px solid #fff}
+.burger{display:none}
+
+/* ---- Hero ---- */
+.hero{padding:28px 0 8px}
+.hero__grid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px}
+.hero__main{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:400px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
+.hero__main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero__main::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,16,.15) 20%,rgba(10,12,16,.85));z-index:-1}
+.hero__copy{padding:32px}
+.hero__copy h1{font-size:clamp(1.9rem,4.4vw,3.1rem);max-width:15ch;text-wrap:balance}
+.hero__copy p{max-width:44ch;color:rgba(255,255,255,.85);margin:12px 0 20px}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:99px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+.hero__side{display:grid;gap:16px}
+.hcard{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:192px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
+.hcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s}
+.hcard:hover img{transform:scale(1.05)}
+.hcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(10,12,16,.82));z-index:-1}
+.hcard div{padding:20px}
+.hcard h3{font-size:1.3rem}
+.hcard span{font-size:.85rem;color:rgba(255,255,255,.8)}
+
+/* ---- Botones ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:99px;border:1px solid transparent;font-weight:700;font-size:.92rem;cursor:pointer;transition:.15s;white-space:nowrap}
+.btn--primary{background:var(--primary);color:#fff}
+.btn--primary:hover{background:var(--primary-dark)}
+.btn--wa{background:#25D366;color:#0B2E19}
+.btn--wa:hover{background:#1EBE5A}
+.btn--dark{background:var(--ink);color:#fff}
+.btn--dark:hover{background:#000}
+.btn--ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn--ghost:hover{background:var(--surface)}
+.btn--block{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* ---- Secciones ---- */
+.sec{padding:44px 0}
+.sec__head{display:flex;align-items:flex-end;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec__head h2{font-size:clamp(1.4rem,2.6vw,2rem)}
+.sec__head p{margin:6px 0 0;color:var(--ink-2);font-size:.95rem}
+.sec__head .btn{margin-left:auto}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);margin-bottom:8px}
+
+/* ---- Categorías ---- */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px;transition:.18s}
+.cat:hover{background:#fff;box-shadow:var(--shadow);transform:translateY(-3px);border-color:transparent}
+.cat__ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:1.35rem;background:#fff;border:1px solid var(--line)}
+.cat b{font-size:.95rem}
+.cat span{font-size:.8rem;color:var(--ink-3)}
+
+/* ---- Grid productos ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.18s;position:relative}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:transparent}
+.card__media{position:relative;aspect-ratio:1/1;background:var(--surface);overflow:hidden}
+.card__media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .card__media img{transform:scale(1.06)}
+.tags{position:absolute;top:10px;left:10px;display:flex;flex-direction:column;gap:5px;align-items:flex-start;z-index:2}
+.tag{padding:4px 9px;border-radius:99px;font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:var(--ink);color:#fff}
+.tag--off{background:var(--primary)}
+.tag--new{background:var(--green)}
+.tag--hit{background:var(--yellow);color:#2A1E00}
+.card__body{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card__cat{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.card__title{font-size:.98rem;font-weight:700;line-height:1.3}
+.card__desc{font-size:.82rem;color:var(--ink-2);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card__foot{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.price{font-size:1.2rem;font-weight:800;letter-spacing:-.02em}
+.price s{font-size:.85rem;font-weight:600;color:var(--ink-3);margin-left:6px}
+.unit{font-size:.76rem;color:var(--ink-3)}
+.stock{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;font-weight:700}
+.stock::before{content:"";width:7px;height:7px;border-radius:99px;background:currentColor}
+.stock--in{color:var(--green)}
+.stock--low{color:#C77700}
+.stock--out{color:#C0392B}
+.card__actions{display:flex;gap:8px;padding:0 14px 14px}
+.card__actions .btn{flex:1;padding:10px 12px;font-size:.86rem}
+
+/* ---- Filtros ---- */
+.shop{display:grid;grid-template-columns:250px 1fr;gap:28px;align-items:start;padding:24px 0 60px}
+.filters{position:sticky;top:calc(var(--nav-h) + 12px);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.fgroup{padding:14px 0;border-bottom:1px solid var(--line)}
+.fgroup:last-of-type{border-bottom:0}
+.fgroup:first-child{padding-top:0}
+.fgroup h3{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:11px}
+.chk{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:.89rem;cursor:pointer}
+.chk input{width:17px;height:17px;accent-color:var(--primary);cursor:pointer;flex:none}
+.chk span{flex:1}
+.chk small{color:var(--ink-3);font-size:.78rem}
+.range{width:100%;accent-color:var(--primary)}
+.rangeval{display:flex;justify-content:space-between;font-size:.82rem;font-weight:700;margin-top:6px}
+.toolbar{display:flex;gap:12px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
+.toolbar .count{font-size:.9rem;color:var(--ink-2)}
+.toolbar select{margin-left:auto;padding:9px 13px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:.88rem;cursor:pointer}
+.filtersToggle{display:none}
+.empty{text-align:center;padding:70px 20px;color:var(--ink-2)}
+.empty div{font-size:2.6rem;margin-bottom:10px}
+
+/* ---- Ofertas / banda ---- */
+.strip{background:var(--ink);color:#fff;border-radius:var(--radius-lg);padding:30px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
+.strip h2{font-size:clamp(1.3rem,2.4vw,1.9rem)}
+.strip p{color:rgba(255,255,255,.72);margin:8px 0 0;max-width:52ch}
+.deals{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.deal{background:linear-gradient(135deg,var(--primary-soft),#fff);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.deal b{display:block;font-size:1.9rem;letter-spacing:-.03em;color:var(--primary)}
+.deal span{font-size:.88rem;color:var(--ink-2)}
+
+/* ---- Beneficios ---- */
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.perk{background:var(--surface);border-radius:var(--radius);padding:18px;border:1px solid var(--line)}
+.perk b{display:block;margin-bottom:4px;font-size:.95rem}
+.perk span{font-size:.85rem;color:var(--ink-2)}
+
+/* ---- Carrito ---- */
+.overlay{position:fixed;inset:0;background:rgba(10,12,16,.5);opacity:0;visibility:hidden;transition:.25s;z-index:90;backdrop-filter:blur(2px)}
+.overlay.open{opacity:1;visibility:visible}
+.cart{position:fixed;top:0;right:0;height:100dvh;width:min(420px,100%);background:#fff;z-index:100;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);box-shadow:var(--shadow-lg)}
+.cart.open{transform:none}
+.cart__hd{display:flex;align-items:center;gap:12px;padding:18px;border-bottom:1px solid var(--line)}
+.cart__hd h2{font-size:1.1rem;flex:1}
+.cart__items{flex:1;overflow-y:auto;padding:8px 18px}
+.ci{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.ci img{width:64px;height:64px;object-fit:cover;border-radius:10px;background:var(--surface)}
+.ci b{font-size:.9rem;font-weight:700;display:block;line-height:1.3}
+.ci small{color:var(--ink-3);font-size:.78rem}
+.ci__price{font-weight:800;font-size:.95rem;text-align:right;white-space:nowrap}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-top:7px}
+.qty button{width:28px;height:28px;background:#fff;border:0;cursor:pointer;font-size:1rem;line-height:1;color:var(--ink-2)}
+.qty button:hover{background:var(--surface);color:var(--ink)}
+.qty span{min-width:30px;text-align:center;font-size:.85rem;font-weight:700}
+.ci__rm{background:none;border:0;color:var(--ink-3);font-size:.76rem;cursor:pointer;text-decoration:underline;padding:4px 0;margin-top:4px}
+.ci__rm:hover{color:#C0392B}
+.cart__ft{border-top:1px solid var(--line);padding:18px;background:var(--surface)}
+.row{display:flex;justify-content:space-between;font-size:.9rem;padding:5px 0;color:var(--ink-2)}
+.row--total{font-size:1.25rem;font-weight:800;color:var(--ink);padding-top:12px;margin-top:8px;border-top:1px solid var(--line)}
+.cart__note{font-size:.78rem;color:var(--ink-3);text-align:center;margin:10px 0 0}
+.cart__empty{text-align:center;padding:60px 20px;color:var(--ink-3)}
+.cart__empty div{font-size:2.8rem;margin-bottom:12px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:.78rem;font-weight:700;margin-bottom:5px;color:var(--ink-2)}
+.field input,.field textarea,.field select{width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:.9rem}
+.field textarea{resize:vertical;min-height:60px}
+
+/* ---- Barra móvil ---- */
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(16,24,40,.08)}
+
+/* ---- Modal producto ---- */
+.modal{position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:16px;opacity:0;visibility:hidden;transition:.2s}
+.modal.open{opacity:1;visibility:visible}
+.modal__bd{background:#fff;border-radius:var(--radius-lg);max-width:760px;width:100%;max-height:90dvh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.modal__bd img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.modal__x{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:99px;border:0;background:rgba(255,255,255,.94);cursor:pointer;font-size:1.1rem;z-index:2;box-shadow:var(--shadow)}
+.modal__info{padding:26px;display:flex;flex-direction:column;gap:12px}
+.modal__info h2{font-size:1.5rem}
+.specs{list-style:none;padding:0;margin:0;display:grid;gap:7px;font-size:.86rem}
+.specs li{display:flex;justify-content:space-between;gap:12px;padding-bottom:7px;border-bottom:1px dashed var(--line);color:var(--ink-2)}
+.specs b{color:var(--ink)}
+
+/* ---- Footer ---- */
+.ft{background:var(--ink);color:rgba(255,255,255,.7);padding:48px 0 26px;margin-top:36px}
+.ft__grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12)}
+.ft h4{color:#fff;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.ft a{display:block;padding:4px 0;font-size:.89rem;transition:.15s}
+.ft a:hover{color:#fff}
+.ft p{font-size:.89rem;margin:0 0 12px}
+.ft__logo{color:#fff;font-weight:800;font-size:1.15rem;margin-bottom:10px;display:block}
+.ft__bot{padding-top:20px;display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;justify-content:space-between}
+
+/* ---- Toast ---- */
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,150%);background:var(--ink);color:#fff;padding:13px 22px;border-radius:99px;font-size:.88rem;font-weight:600;z-index:200;transition:transform .3s;box-shadow:var(--shadow-lg)}
+.toast.show{transform:translate(-50%,0)}
+
+/* ---- Responsive ---- */
+@media(max-width:1000px){
+  .hero__grid{grid-template-columns:1fr}
+  .hero__side{grid-template-columns:1fr 1fr}
+  .shop{grid-template-columns:1fr}
+  .filters{position:static;display:none}
+  .filters.open{display:block}
+  .filtersToggle{display:inline-flex}
+  .ft__grid{grid-template-columns:1fr 1fr;gap:26px}
+}
+@media(max-width:760px){
+  .nav{display:none}
+  .search{display:none}
+  .search--mobile{display:block;max-width:none;padding:0 16px 12px}
+  .burger{display:grid}
+  .hdr__in{gap:10px}
+  .mbar{display:block}
+  body{padding-bottom:74px}
+  .strip{grid-template-columns:1fr}
+  .modal__bd{grid-template-columns:1fr;max-height:88dvh}
+  .modal__bd img{min-height:200px;max-height:240px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:12px}
+  .card__actions{flex-direction:column}
+  .hero__copy{padding:22px}
+  .sec{padding:32px 0}
+}
+@media(max-width:480px){
+  .hero__side{grid-template-columns:1fr}
+  .ft__grid{grid-template-columns:1fr}
+  .cats{grid-template-columns:1fr 1fr}
+}
+
+</style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23FF5A1F'/><text y='72' x='50' text-anchor='middle' font-size='58'>C</text></svg>">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"GroceryStore","name":"La Esquina","description":"Promociones vigentes en despensa, limpieza, cafe y regreso a clases. Precios rebajados durante toda la semana.",
+   "address":{"@type":"PostalAddress","streetAddress":"Av. Reforma 218, Col. Centro","addressCountry":"MX"},
+   "openingHours":"Mo-Sa 07:00-21:00","priceRange":"$$","currenciesAccepted":"MXN"}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="topbar"><div class="wrap">
+  Envio <b>GRATIS</b> en pedidos desde <span data-cfg-mxn="envioGratisDesde">$350.00</span> &middot; Entrega el mismo dia
+</div></div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <button class="iconbtn burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="logo" href="index.html">
+      <span class="logo__mark" aria-hidden="true">&#128722;</span>
+      <span>La Esquina<small>Abarrotes y papeleria</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html?depto=abarrotes">Abarrotes</a>
+      <a href="tienda.html?depto=papeleria">Papeler&iacute;a</a>
+      <a href="ofertas.html" aria-current="page">Ofertas</a>
+    </nav>
+    <div class="hdr__actions">
+      <div class="search">
+        <label class="sr-only" for="q">Buscar productos</label>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input class="js-search" id="q" type="search" placeholder="Buscar arroz, cuadernos, cafe..." autocomplete="off">
+      </div>
+      <button class="iconbtn js-cart-open" type="button" aria-label="Abrir carrito">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 11.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg><span class="badge js-cart-count" hidden>0</span>
+      </button>
+    </div>
+  </div>
+  <div class="search search--mobile" hidden id="navMovil">
+    <label class="sr-only" for="qm">Buscar productos</label>
+    <input class="js-search" id="qm" type="search" placeholder="Buscar productos..." autocomplete="off">
+    <nav class="nav" style="display:flex;flex-wrap:wrap;margin:10px 0 0" aria-label="Principal movil">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html?depto=abarrotes">Abarrotes</a>
+      <a href="tienda.html?depto=papeleria">Papeler&iacute;a</a>
+      <a href="ofertas.html" aria-current="page">Ofertas</a>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+  <section class="sec">
+    <div class="strip">
+      <div>
+        <p class="eyebrow" style="color:var(--yellow)">Vigencia: <span id="vigencia"></span></p>
+        <h2>Ofertas de la semana</h2>
+        <p>Precios rebajados en toda la tienda mientras dure el inventario. Se actualizan cada lunes por la manana.</p>
+      </div>
+      <a class="btn btn--primary" href="tienda.html">Ver catalogo completo</a>
+    </div>
+    <div class="deals" id="deals2" style="margin-top:16px"></div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="sec__head"><div>
+      <p class="eyebrow">Precio rebajado</p>
+      <h2>Productos en oferta</h2>
+      <p>Ordenados por porcentaje de descuento, del mayor al menor.</p>
+    </div></div>
+    <div class="grid" id="gridOfertas"></div>
+  </section>
+</div></main>
+<div class="overlay" id="overlay"></div>
+<aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="cart__hd">
+    <h2>Tu pedido</h2>
+    <button class="iconbtn" id="cartClose" type="button" aria-label="Cerrar carrito">&#10005;</button>
+  </div>
+  <div class="cart__items" id="cartItems"></div>
+  <div class="cart__ft" id="cartFoot" hidden>
+    <div class="field">
+      <label for="fNombre">Nombre de quien recibe</label>
+      <input id="fNombre" type="text" placeholder="Ana Rivera" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="fDireccion">Direccion de entrega</label>
+      <input id="fDireccion" type="text" placeholder="Calle, numero, colonia" autocomplete="street-address">
+    </div>
+    <div class="field" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <span><label for="fEntrega">Entrega</label>
+        <select id="fEntrega"><option value="domicilio">A domicilio</option><option value="tienda">Recoger en tienda</option></select></span>
+      <span><label for="fPago">Pago</label>
+        <select id="fPago"><option>Efectivo</option><option>Transferencia</option><option>Tarjeta en entrega</option></select></span>
+    </div>
+    <div class="field">
+      <label for="fNotas">Notas para el pedido</label>
+      <textarea id="fNotas" placeholder="Ej. tocar el timbre, el pan bien dorado..."></textarea>
+    </div>
+    <div class="row"><span>Subtotal</span><span id="rowSub">$0.00</span></div>
+    <div class="row"><span>Envio</span><span id="rowEnvio">$0.00</span></div>
+    <div class="row row--total"><span>Total</span><span id="rowTotal">$0.00</span></div>
+    <p class="cart__note" id="cartNota"></p>
+    <button class="btn btn--wa btn--block" id="btnWa" type="button" style="margin-top:12px">Enviar pedido por WhatsApp</button>
+    <p class="cart__note">Se abre WhatsApp con tu pedido ya escrito. Confirmas ahi y listo.</p>
+  </div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" aria-hidden="true">
+  <div class="modal__bd" id="modalBody"></div>
+</div>
+
+<div class="mbar">
+  <button class="btn btn--dark btn--block js-cart-open" type="button">
+    Ver pedido &middot; <span class="js-cart-total">$0.00</span>
+  </button>
+</div>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__grid">
+      <div>
+        <span class="ft__logo">La Esquina</span>
+        <p>La tienda del barrio, ahora tambien en linea. Abarrotes frescos y toda la papeleria, con entrega el mismo dia en tu colonia.</p>
+        <p><b style="color:#fff" data-cfg="direccion"></b></p>
+        <p data-cfg="horario"></p>
+      </div>
+      <div><h4>Comprar</h4>
+        <a href="tienda.html?depto=abarrotes">Abarrotes</a>
+        <a href="tienda.html?depto=papeleria">Papeleria</a>
+        <a href="ofertas.html">Ofertas de la semana</a>
+        <a href="tienda.html">Todo el catalogo</a></div>
+      <div><h4>Ayuda</h4>
+        <a href="#envios">Envios y cobertura</a>
+        <a href="#pagos">Formas de pago</a>
+        <a href="#devoluciones">Cambios y devoluciones</a>
+        <a href="#faq">Preguntas frecuentes</a></div>
+      <div><h4>Contacto</h4>
+        <a href="#" data-cfg="email"></a>
+        <a href="#">Pedidos por WhatsApp</a>
+        <a href="#">Facturacion</a></div>
+    </div>
+    <div class="ft__bot">
+      <span>&copy; 2026 La Esquina. Precios en pesos mexicanos, IVA incluido.</span>
+      <span>Fotografias de Unsplash &middot; Contenido de demostracion</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+"use strict";
+/* GENERADO AUTOMÁTICAMENTE por scripts/build-config.mjs — no editar a mano. */
+const CONFIG = {
+  "whatsapp": "5215512345678",
+  "negocio": {
+    "nombre": "La Esquina",
+    "direccion": "Av. Reforma 218, Col. Centro",
+    "horario": "Lun a Sáb 7:00–21:00 · Dom 8:00–15:00",
+    "email": "hola@laesquina.mx"
+  },
+  "moneda": "MXN",
+  "envioCosto": 45,
+  "envioGratisDesde": 350,
+  "pedidoMinimo": 100
+};
+
+/* Catálogo de La Esquina. Contenido provisional realista.
+   Reemplaza este archivo por tu API o CMS cuando pases a producción. */
+const IMG = (id, w = 600) =>
+  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=75`;
+const CATEGORIAS = [
+  { id: 'despensa',   depto: 'abarrotes', nombre: 'Despensa básica', icono: '🌾' },
+  { id: 'aceites',    depto: 'abarrotes', nombre: 'Aceites y aderezos', icono: '🫒' },
+  { id: 'cafe',       depto: 'abarrotes', nombre: 'Café e infusiones', icono: '☕' },
+  { id: 'lacteos',    depto: 'abarrotes', nombre: 'Lácteos', icono: '🥛' },
+  { id: 'panaderia',  depto: 'abarrotes', nombre: 'Panadería', icono: '🍞' },
+  { id: 'limpieza',   depto: 'abarrotes', nombre: 'Limpieza del hogar', icono: '🧴' },
+  { id: 'cuadernos',  depto: 'papeleria', nombre: 'Cuadernos y libretas', icono: '📓' },
+  { id: 'escritura',  depto: 'papeleria', nombre: 'Escritura', icono: '🖊️' },
+  { id: 'arte',       depto: 'papeleria', nombre: 'Arte y color', icono: '🎨' },
+  { id: 'escolar',    depto: 'papeleria', nombre: 'Útiles escolares', icono: '✏️' },
+  { id: 'mochilas',   depto: 'papeleria', nombre: 'Mochilas', icono: '🎒' },
+  { id: 'oficina',    depto: 'papeleria', nombre: 'Oficina', icono: '📎' }
+];
+const DEPTOS = {
+  abarrotes: { nombre: 'Abarrotes', desc: 'Despensa, lácteos, pan del día y limpieza. Surtido completo para la semana.' },
+  papeleria: { nombre: 'Papelería', desc: 'Cuadernos, escritura, arte y todo lo de la lista escolar.' }
+};
+
+/* precio en MXN. stock: número de piezas disponibles */
+const PRODUCTOS = [
+  // ---------- ABARROTES ----------
+  { id:'ab-01', n:'Arroz superextra grano largo 1 kg', cat:'despensa', p:32, ant:38, stock:48, marca:'Milpa Alta', unidad:'Bolsa 1 kg', tags:['oferta'],
+    d:'Grano largo seleccionado, rinde parejo y no se bate. El básico que nunca debe faltar en la alacena.', img:IMG('photo-1516714435131-44d6b64dc6a2') },
+  { id:'ab-02', n:'Frijol negro seleccionado 1 kg', cat:'despensa', p:39, stock:36, marca:'Milpa Alta', unidad:'Bolsa 1 kg', tags:[],
+    d:'Frijol negro limpio, sin piedra, de cosecha reciente. Ideal para caldo, refritos o enfrijoladas.', img:IMG('photo-1543353071-c953d88f7033') },
+  { id:'ab-03', n:'Azúcar estándar 1 kg', cat:'despensa', p:28, stock:60, marca:'Ingenio del Valle', unidad:'Bolsa 1 kg', tags:[],
+    d:'Azúcar estándar de caña para café, repostería y agua fresca. Bolsa resellable.', img:IMG('photo-1601600576337-c1d8a0d1373c') },
+  { id:'ab-04', n:'Pasta para sopa surtida — paquete 5 pzas', cat:'despensa', p:45, ant:55, stock:22, marca:'La Cocinera', unidad:'Paquete 5 × 200 g', tags:['oferta','destacado'],
+    d:'Cinco cortes distintos: coditos, fideo, letras, estrella y sopa de conchitas. Rinde para la quincena.', img:IMG('photo-1631856954655-966f97d809de') },
+  { id:'ab-05', n:'Sal de mar fina 1 kg', cat:'despensa', p:19, stock:75, marca:'Salinas', unidad:'Bolsa 1 kg', tags:[],
+    d:'Sal de mar de grano fino, yodatada. Para cocina diaria y conservación.', img:IMG('photo-1606824722920-4c652a70f348') },
+  { id:'ab-06', n:'Harina de maíz nixtamalizado 1 kg', cat:'despensa', p:34, stock:0, marca:'Milpa Alta', unidad:'Bolsa 1 kg', tags:[],
+    d:'Para tortillas, sopes, gorditas y tamales. Nixtamalizada al estilo tradicional.', img:IMG('photo-1583258292688-d0213dc5a3a8') },
+  { id:'ab-07', n:'Aceite de girasol 900 ml', cat:'aceites', p:42, ant:52, stock:31, marca:'Sol de Oro', unidad:'Botella 900 ml', tags:['oferta'],
+    d:'Aceite ligero de girasol, punto de humo alto. Perfecto para freír sin dejar sabor.', img:IMG('photo-1552592074-ea7a91b851b3') },
+  { id:'ab-08', n:'Aceite de oliva extra virgen 500 ml', cat:'aceites', p:159, stock:9, marca:'Casa Olmo', unidad:'Botella 500 ml', tags:['destacado'],
+    d:'Primera prensada en frío, acidez menor a 0.5%. Botella oscura que protege del sol.', img:IMG('photo-1720468750623-39e9a09f5067') },
+  { id:'ab-09', n:'Vinagre de manzana 500 ml', cat:'aceites', p:29, stock:40, marca:'Casa Olmo', unidad:'Botella 500 ml', tags:[],
+    d:'Vinagre de manzana natural, sin filtrar. Para aderezos, encurtidos y limpieza.', img:IMG('photo-1707827914998-0d56ee13c161') },
+  { id:'ab-10', n:'Miel de abeja multifloral 500 g', cat:'aceites', p:98, stock:14, marca:'Colmena Nuestra', unidad:'Frasco 500 g', tags:['nuevo'],
+    d:'Miel cruda de productores de la sierra. Cristaliza de forma natural: es señal de que es pura.', img:IMG('photo-1654245201134-49f7e8115817') },
+  { id:'ab-11', n:'Café molido tueste medio 500 g', cat:'cafe', p:139, ant:169, stock:18, marca:'Altura 1400', unidad:'Bolsa 500 g', tags:['oferta','destacado'],
+    d:'Arábica de altura, tueste medio con notas a chocolate y nuez. Molienda para cafetera de goteo.', img:IMG('photo-1524350876685-274059332603') },
+  { id:'ab-12', n:'Café en grano tueste oscuro 1 kg', cat:'cafe', p:245, stock:7, marca:'Altura 1400', unidad:'Bolsa 1 kg', tags:['destacado'],
+    d:'Grano entero de tueste oscuro, cuerpo intenso. Empacado con válvula desgasificadora.', img:IMG('photo-1540965555-ef9a836372ed') },
+  { id:'ab-13', n:'Café soluble clásico 200 g', cat:'cafe', p:112, stock:26, marca:'Altura 1400', unidad:'Frasco 200 g', tags:[],
+    d:'Soluble de disolución rápida para las mañanas con prisa. Frasco de vidrio reutilizable.', img:IMG('photo-1562051036-e0eea191d42f') },
+  { id:'ab-14', n:'Té de manzanilla — 25 sobres', cat:'cafe', p:38, stock:44, marca:'Herbal', unidad:'Caja 25 sobres', tags:[],
+    d:'Manzanilla en flor, sobres individuales sellados. Para la digestión y el descanso.', img:IMG('photo-1692296113053-76f240e5ce33') },
+  { id:'ab-15', n:'Leche entera 1 L', cat:'lacteos', p:26, stock:52, marca:'La Vaquita', unidad:'Envase 1 L', tags:[],
+    d:'Leche entera pasteurizada UHT. No requiere refrigeración hasta abrirse.', img:IMG('photo-1550583724-b2692b85b150') },
+  { id:'ab-16', n:'Leche deslactosada 1 L', cat:'lacteos', p:31, stock:38, marca:'La Vaquita', unidad:'Envase 1 L', tags:[],
+    d:'Sin lactosa, mismo sabor y aporte de calcio. Para estómagos sensibles.', img:IMG('photo-1778174573625-e6d0e821fef8') },
+  { id:'ab-17', n:'Yogur natural sin azúcar 1 kg', cat:'lacteos', p:58, ant:68, stock:16, marca:'La Vaquita', unidad:'Envase 1 kg', tags:['oferta'],
+    d:'Yogur natural con cultivos vivos, sin azúcar añadida. Consistencia cremosa.', img:IMG('photo-1585083969600-495ee7e3604b') },
+  { id:'ab-18', n:'Queso fresco de rancho 400 g', cat:'lacteos', p:79, stock:5, marca:'Rancho El Sauce', unidad:'Pieza 400 g', tags:['nuevo'],
+    d:'Queso fresco artesanal, ligeramente salado. Llega cada martes y jueves.', img:IMG('photo-1639151082235-406d8eb262b9') },
+  { id:'ab-19', n:'Crema ácida 450 ml', cat:'lacteos', p:44, stock:24, marca:'Rancho El Sauce', unidad:'Envase 450 ml', tags:[],
+    d:'Crema espesa de rancho, perfecta para enchiladas, tacos dorados y sopas.', img:IMG('photo-1634141510639-d691d86f47be') },
+  { id:'ab-20', n:'Pan de caja integral 680 g', cat:'panaderia', p:52, stock:20, marca:'Horno Diario', unidad:'Bolsa 680 g', tags:[],
+    d:'Pan integral con salvado y semillas, horneado la madrugada del mismo día.', img:IMG('photo-1608198093002-ad4e005484ec') },
+  { id:'ab-21', n:'Bolillo recién horneado — 6 pzas', cat:'panaderia', p:24, stock:0, marca:'Horno Diario', unidad:'Bolsa 6 piezas', tags:['destacado'],
+    d:'Bolillo de corteza crujiente y migajón suave. Sale del horno a las 7:00 y a las 17:00.', img:IMG('photo-1568254183919-78a4f43a2877') },
+  { id:'ab-22', n:'Concha surtida — 4 pzas', cat:'panaderia', p:36, stock:12, marca:'Horno Diario', unidad:'Bolsa 4 piezas', tags:['nuevo'],
+    d:'Conchas de vainilla y chocolate, masa esponjosa con costra dulce. Del día.', img:IMG('photo-1556471013-0001958d2f12') },
+  { id:'ab-23', n:'Tortillas de harina — 10 pzas', cat:'panaderia', p:29, stock:33, marca:'Horno Diario', unidad:'Paquete 10 piezas', tags:[],
+    d:'Tortillas de harina suaves, listas para calentar en el comal.', img:IMG('photo-1515182629504-727d7753751f') },
+  { id:'ab-24', n:'Detergente líquido multiusos 1.8 L', cat:'limpieza', p:89, ant:109, stock:27, marca:'Nítido', unidad:'Botella 1.8 L', tags:['oferta','destacado'],
+    d:'Concentrado biodegradable para ropa blanca y de color. Rinde hasta 30 cargas.', img:IMG('photo-1563453392212-326f5e854473') },
+  { id:'ab-25', n:'Limpiador desinfectante 1 L', cat:'limpieza', p:47, stock:35, marca:'Nítido', unidad:'Botella 1 L', tags:[],
+    d:'Elimina 99.9% de bacterias en pisos y superficies. Aroma cítrico ligero.', img:IMG('photo-1528740561666-dc2479dc08ab') },
+  { id:'ab-26', n:'Jabón para trastes en gel 750 ml', cat:'limpieza', p:38, stock:41, marca:'Nítido', unidad:'Botella 750 ml', tags:[],
+    d:'Corta la grasa desde el primer contacto y cuida las manos. Fórmula concentrada.', img:IMG('photo-1550963295-019d8a8a61c5') },
+  { id:'ab-27', n:'Papel higiénico doble hoja — 8 rollos', cat:'limpieza', p:96, ant:118, stock:19, marca:'Nítido', unidad:'Paquete 8 rollos', tags:['oferta'],
+    d:'Doble hoja de 240 hojas por rollo. Suave, resistente y se deshace fácil.', img:IMG('photo-1626379481874-3dc5678fa8ca') },
+  { id:'ab-28', n:'Gel antibacterial 1 L con dosificador', cat:'limpieza', p:75, stock:3, marca:'Nítido', unidad:'Botella 1 L', tags:[],
+    d:'70% alcohol con glicerina. Dosificador incluido para casa, oficina o negocio.', img:IMG('photo-1583947215259-38e31be8751f') },
+
+  // ---------- PAPELERÍA ----------
+  { id:'pa-01', n:'Cuaderno profesional cuadro chico 100 hojas', cat:'cuadernos', p:42, ant:52, stock:64, marca:'Trazo', unidad:'Pieza', tags:['oferta','destacado'],
+    d:'Cuaderno cosido tamaño profesional, cuadro de 5 mm y pasta dura resistente al uso diario.', img:IMG('photo-1531346878377-a5be20888e57') },
+  { id:'pa-02', n:'Libreta de puntos A5 — tapa dura', cat:'cuadernos', p:129, stock:15, marca:'Trazo', unidad:'Pieza', tags:['nuevo','destacado'],
+    d:'160 páginas de papel marfil de 100 g con retícula de puntos. Cinta separadora y liga.', img:IMG('photo-1554757387-fa0367573d09') },
+  { id:'pa-03', n:'Cuaderno de raya francesa 100 hojas', cat:'cuadernos', p:39, stock:52, marca:'Trazo', unidad:'Pieza', tags:[],
+    d:'Raya francesa para primaria. Cosido y engrapado, con margen impreso.', img:IMG('photo-1591195852468-03a01d1375d6') },
+  { id:'pa-04', n:'Block de notas adhesivas — 5 colores', cat:'cuadernos', p:48, stock:37, marca:'Trazo', unidad:'Paquete 5 blocks', tags:[],
+    d:'500 notas en total, adhesivo reposicionable que no deja residuo.', img:IMG('photo-1647559709298-c0e3dcb47092') },
+  { id:'pa-05', n:'Agenda anual sin fecha', cat:'cuadernos', p:189, stock:8, marca:'Trazo', unidad:'Pieza', tags:['nuevo'],
+    d:'Planeador sin fecha: empieza cuando quieras. Vistas mensual, semanal y de metas.', img:IMG('photo-1601001435957-74f0958a93fb') },
+  { id:'pa-06', n:'Cuaderno de dibujo A4 — 60 hojas', cat:'cuadernos', p:96, stock:21, marca:'Trazo', unidad:'Pieza', tags:[],
+    d:'Papel de 120 g apto para lápiz, carboncillo y marcador. Espiral doble.', img:IMG('photo-1611079830811-865ff4428d17') },
+  { id:'pa-07', n:'Bolígrafo tinta gel 0.7 mm — 4 pzas', cat:'escritura', p:56, ant:69, stock:58, marca:'Punto Fino', unidad:'Paquete 4 piezas', tags:['oferta'],
+    d:'Tinta gel de secado rápido en negro, azul, rojo y verde. Grip antiderrapante.', img:IMG('photo-1766340757091-24765fec340f') },
+  { id:'pa-08', n:'Pluma de punto retráctil 1.0 mm — 10 pzas', cat:'escritura', p:74, stock:29, marca:'Punto Fino', unidad:'Caja 10 piezas', tags:[],
+    d:'Trazo grueso y uniforme, tinta de aceite que no se corre. Ideal para volumen.', img:IMG('photo-1557487970-96f8005f458b') },
+  { id:'pa-09', n:'Marcatextos pastel — 6 tonos', cat:'escritura', p:82, stock:34, marca:'Punto Fino', unidad:'Paquete 6 piezas', tags:['destacado'],
+    d:'Punta biselada, tinta pastel que no traspasa el papel delgado.', img:IMG('photo-1774878520736-6cacbcce1b7b') },
+  { id:'pa-10', n:'Marcadores permanentes punta fina — 4 pzas', cat:'escritura', p:68, stock:0, marca:'Punto Fino', unidad:'Paquete 4 piezas', tags:[],
+    d:'Escriben sobre plástico, vidrio, metal y cartón. Secado rápido, no destiñe.', img:IMG('photo-1618381801643-3d253a63a386') },
+  { id:'pa-11', n:'Lápices de colores — 24 piezas', cat:'arte', p:118, ant:145, stock:26, marca:'Pigmento', unidad:'Caja 24 piezas', tags:['oferta','destacado'],
+    d:'Mina suave de 3.3 mm, alta pigmentación y buen difuminado. Madera certificada.', img:IMG('photo-1513542789411-b6a5d4f31634') },
+  { id:'pa-12', n:'Lápices de colores — 48 piezas', cat:'arte', p:229, stock:11, marca:'Pigmento', unidad:'Caja 48 piezas', tags:['destacado'],
+    d:'Gama completa con tonos de piel y grises. Estuche de lata resistente.', img:IMG('photo-1501349800519-48093d60bde0') },
+  { id:'pa-13', n:'Plumones de doble punta — 12 colores', cat:'arte', p:156, stock:17, marca:'Pigmento', unidad:'Paquete 12 piezas', tags:['nuevo'],
+    d:'Punta pincel y punta fina en el mismo marcador. Base de agua, no traspasa.', img:IMG('photo-1607081758973-b85919737e26') },
+  { id:'pa-14', n:'Crayones jumbo — 16 piezas', cat:'arte', p:64, stock:43, marca:'Pigmento', unidad:'Caja 16 piezas', tags:[],
+    d:'Grosor jumbo para manos pequeñas. Cera lavable que sale con agua.', img:IMG('photo-1590808233940-e2da37f58d8a') },
+  { id:'pa-15', n:'Acuarelas en pastilla — 12 colores', cat:'arte', p:98, stock:19, marca:'Pigmento', unidad:'Estuche 12 colores', tags:[],
+    d:'Pastillas de acuarela con pincel incluido. Buena carga de pigmento por trazo.', img:IMG('photo-1572045188875-61013d06e517') },
+  { id:'pa-16', n:'Juego de lápices HB — 12 piezas', cat:'escolar', p:52, stock:71, marca:'Trazo', unidad:'Caja 12 piezas', tags:[],
+    d:'Lápices HB con goma, madera de fácil sacado. El clásico de la lista escolar.', img:IMG('photo-1667687435942-4fdff73a3ed6') },
+  { id:'pa-17', n:'Kit escolar completo — 14 artículos', cat:'escolar', p:289, ant:359, stock:12, marca:'Trazo', unidad:'Kit 14 piezas', tags:['oferta','destacado'],
+    d:'Cuadernos, lápices, colores, regla, tijeras, pegamento y estuche. La lista resuelta en un solo pedido.', img:IMG('photo-1599652293152-e19873ad26a3') },
+  { id:'pa-18', n:'Juego de geometría 4 piezas', cat:'escolar', p:45, stock:48, marca:'Trazo', unidad:'Estuche 4 piezas', tags:[],
+    d:'Regla 30 cm, escuadras de 45° y 60° y transportador. Acrílico flexible.', img:IMG('photo-1718306155883-3f0bc8fbf881') },
+  { id:'pa-19', n:'Tijeras escolares punta roma', cat:'escolar', p:38, stock:56, marca:'Trazo', unidad:'Pieza', tags:[],
+    d:'Hoja de acero inoxidable y punta roma de seguridad. Mango ergonómico.', img:IMG('photo-1766961557650-14778a6535a7') },
+  { id:'pa-20', n:'Pegamento en barra 40 g — 3 pzas', cat:'escolar', p:59, stock:39, marca:'Trazo', unidad:'Paquete 3 piezas', tags:[],
+    d:'Adhesivo lavable, no tóxico, se aplica sin arrugar el papel.', img:IMG('photo-1762318953799-918e21d1fec4') },
+  { id:'pa-21', n:'Mochila escolar 18" con compartimento acolchado', cat:'mochilas', p:549, ant:699, stock:9, marca:'Ruta', unidad:'Pieza', tags:['oferta','destacado'],
+    d:'Compartimento acolchado para laptop de 14", tela repelente al agua y espalda ventilada.', img:IMG('photo-1594608661623-aa0bd3a69d98') },
+  { id:'pa-22', n:'Mochila urbana antirrobo 22 L', cat:'mochilas', p:729, stock:6, marca:'Ruta', unidad:'Pieza', tags:['nuevo'],
+    d:'Cierres ocultos, bolsillo trasero de seguridad y puerto de carga lateral.', img:IMG('photo-1726726192148-af52008ff663') },
+  { id:'pa-23', n:'Mochila infantil con ruedas', cat:'mochilas', p:625, stock:4, marca:'Ruta', unidad:'Pieza', tags:[],
+    d:'Ruedas silenciosas y manija telescópica. También se carga en la espalda.', img:IMG('photo-1622560481156-01fc7e1693e6') },
+  { id:'pa-24', n:'Lonchera térmica con asa', cat:'mochilas', p:289, stock:14, marca:'Ruta', unidad:'Pieza', tags:[],
+    d:'Forro térmico que conserva la temperatura hasta 5 horas. Interior lavable.', img:IMG('photo-1581605405669-fcdf81165afa') },
+  { id:'pa-25', n:'Folder tamaño carta — 25 pzas', cat:'oficina', p:68, stock:47, marca:'Orden', unidad:'Paquete 25 piezas', tags:[],
+    d:'Cartulina de 180 g con pestaña para etiquetar. Tamaño carta estándar.', img:IMG('photo-1599081595476-75608b796d52') },
+  { id:'pa-26', n:'Engrapadora de escritorio + 1000 grapas', cat:'oficina', p:135, ant:165, stock:18, marca:'Orden', unidad:'Kit', tags:['oferta'],
+    d:'Cuerpo metálico, engrapa hasta 25 hojas. Incluye caja de grapas estándar.', img:IMG('photo-1758366278318-d0f457e3bb4f') },
+  { id:'pa-27', n:'Organizador de escritorio 5 divisiones', cat:'oficina', p:219, stock:10, marca:'Orden', unidad:'Pieza', tags:['nuevo'],
+    d:'Malla metálica con cinco compartimentos para plumas, notas y clips.', img:IMG('photo-1779684998897-ce5de594a5ac') },
+  { id:'pa-28', n:'Paquete de hojas blancas carta — 500 hojas', cat:'oficina', p:129, stock:30, marca:'Orden', unidad:'Paquete 500 hojas', tags:['destacado'],
+    d:'Papel bond de 75 g, blancura 96%. Compatible con láser e inyección de tinta.', img:IMG('photo-1779684998932-a48162e12933') }
+];
+const OFERTAS_SEMANA = {
+  vigencia: 'Del lunes 10 al domingo 16',
+  destacados: ['ab-11', 'pa-17', 'ab-24', 'pa-21'],
+  banners: [
+    { t:'3×2 en despensa básica', s:'Arroz, frijol, azúcar y pasta. Lleva 3, paga 2.' },
+    { t:'−20% en regreso a clases', s:'Kits escolares, mochilas y todo lo de la lista.' },
+    { t:'Envío gratis desde $350', s:'En pedidos dentro de la colonia, el mismo día.' }
+  ]
+};
+const HERO = {
+  principal: IMG('photo-1670684684445-a4504dca0bbc', 1400),
+  abarrotes: IMG('photo-1607349913338-fca6f7fc42d0', 800),
+  papeleria: IMG('photo-1779684998932-a48162e12933', 800)
+};
+
+/* Lógica pura del carrito y del pedido por WhatsApp.
+   Sin dependencias del DOM: se puede probar en Node. */
+const mxn = (n) =>
+  new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', minimumFractionDigits: 2 }).format(n);
+const estadoStock = (stock) =>
+  stock <= 0 ? { clase: 'out', texto: 'Agotado' }
+  : stock <= 5 ? { clase: 'low', texto: `Últimas ${stock} pzas` }
+  : { clase: 'in', texto: 'Disponible' };
+
+/** Añade o incrementa respetando el stock. Devuelve un carrito nuevo. */
+function agregar(carrito, producto, cantidad = 1) {
+  if (!producto || producto.stock <= 0) return carrito;
+  const nuevo = carrito.map((l) => ({ ...l }));
+  const linea = nuevo.find((l) => l.id === producto.id);
+  if (linea) {
+    linea.cantidad = Math.min(linea.cantidad + cantidad, producto.stock);
+  } else {
+    nuevo.push({
+      id: producto.id, n: producto.n, p: producto.p, img: producto.img,
+      unidad: producto.unidad, stock: producto.stock,
+      cantidad: Math.min(cantidad, producto.stock)
+    });
+  }
+  return nuevo;
+}
+
+/** Cambia la cantidad de una línea. Si llega a 0 la elimina. */
+function cambiarCantidad(carrito, id, delta) {
+  return carrito
+    .map((l) => (l.id === id ? { ...l, cantidad: Math.min(Math.max(l.cantidad + delta, 0), l.stock) } : l))
+    .filter((l) => l.cantidad > 0);
+}
+const quitar = (carrito, id) => carrito.filter((l) => l.id !== id);
+const piezas = (carrito) => carrito.reduce((s, l) => s + l.cantidad, 0);
+
+/** Totales del pedido, incluido el envío según las reglas del negocio. */
+function totales(carrito, cfg) {
+  const subtotal = carrito.reduce((s, l) => s + l.p * l.cantidad, 0);
+  const gratis = subtotal >= cfg.envioGratisDesde;
+  const envio = subtotal === 0 || gratis ? 0 : cfg.envioCosto;
+  return {
+    subtotal,
+    envio,
+    envioGratis: gratis,
+    faltaParaEnvioGratis: Math.max(cfg.envioGratisDesde - subtotal, 0),
+    total: subtotal + envio,
+    piezas: piezas(carrito),
+    cumpleMinimo: subtotal >= cfg.pedidoMinimo
+  };
+}
+
+/** Arma el texto del pedido tal como llegará al WhatsApp del negocio. */
+function mensajeWhatsApp(carrito, cfg, datos = {}) {
+  const t = totales(carrito, cfg);
+  const L = [];
+  L.push(`*NUEVO PEDIDO — ${cfg.negocio.nombre}*`);
+  L.push('');
+  L.push('*Productos*');
+  carrito.forEach((l, i) => {
+    L.push(`${i + 1}. ${l.n}`);
+    L.push(`   ${l.cantidad} × ${mxn(l.p)} = ${mxn(l.p * l.cantidad)}`);
+  });
+  L.push('');
+  L.push(`Subtotal: ${mxn(t.subtotal)}`);
+  L.push(`Envío: ${t.envioGratis ? 'GRATIS' : mxn(t.envio)}`);
+  L.push(`*TOTAL: ${mxn(t.total)}*`);
+  L.push(`Piezas: ${t.piezas}`);
+  L.push('');
+  L.push('*Datos de entrega*');
+  L.push(`Nombre: ${datos.nombre || '(por confirmar)'}`);
+  L.push(`Dirección: ${datos.direccion || '(por confirmar)'}`);
+  L.push(`Entrega: ${datos.entrega === 'tienda' ? 'Recoger en tienda' : 'A domicilio'}`);
+  L.push(`Pago: ${datos.pago || 'Efectivo'}`);
+  if (datos.notas) L.push(`Notas: ${datos.notas}`);
+  return L.join('\n');
+}
+function enlaceWhatsApp(carrito, cfg, datos = {}) {
+  return `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(mensajeWhatsApp(carrito, cfg, datos))}`;
+}
+
+/** Filtro y orden del catálogo. */
+function filtrar(productos, f = {}) {
+  const q = (f.q || '').trim().toLowerCase();
+  let r = productos.filter((p) => {
+    if (f.depto && f.depto !== 'todos' && deptoDe(p, f.categorias_meta) !== f.depto) return false;
+    if (f.cats?.length && !f.cats.includes(p.cat)) return false;
+    if (f.marcas?.length && !f.marcas.includes(p.marca)) return false;
+    if (f.max != null && p.p > f.max) return false;
+    if (f.soloOferta && !p.tags.includes('oferta')) return false;
+    if (f.soloDisponible && p.stock <= 0) return false;
+    if (q) {
+      const heno = `${p.n} ${p.d} ${p.marca} ${p.cat}`.toLowerCase();
+      if (!q.split(/\s+/).every((t) => heno.includes(t))) return false;
+    }
+    return true;
+  });
+  const orden = {
+    relevancia: (a, b) => (b.tags.length - a.tags.length) || a.p - b.p,
+    precio_asc: (a, b) => a.p - b.p,
+    precio_desc: (a, b) => b.p - a.p,
+    nombre: (a, b) => a.n.localeCompare(b.n, 'es'),
+    descuento: (a, b) => desc(b) - desc(a)
+  };
+  return r.sort(orden[f.orden] || orden.relevancia);
+}
+
+const desc = (p) => (p.ant ? Math.round((1 - p.p / p.ant) * 100) : 0);
+const descuento = desc;
+function deptoDe(p, categorias) {
+  return categorias?.find((c) => c.id === p.cat)?.depto || '';
+}
+
+const C = { mxn, estadoStock, agregar, cambiarCantidad, quitar, piezas, totales,
+            mensajeWhatsApp, enlaceWhatsApp, filtrar, descuento, deptoDe };
+
+
+
+const $  = (s, r = document) => r.querySelector(s);
+const $ = (s, r = document) => [...r.querySelectorAll(s)];
+const CLAVE = 'laesquina.carrito.v1';
+
+let carrito = [];
+try { carrito = JSON.parse(localStorage.getItem(CLAVE)) || []; } catch { carrito = []; }
+
+const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(carrito)); } catch {} };
+const porId  = (id) => PRODUCTOS.find((p) => p.id === id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (m) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
+
+/* ---------------- Toast ---------------- */
+let tToast;
+function avisar(msg) {
+  let t = $('.toast');
+  if (!t) { t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role','status'); document.body.appendChild(t); }
+  t.textContent = msg;
+  requestAnimationFrame(() => t.classList.add('show'));
+  clearTimeout(tToast);
+  tToast = setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+/* ---------------- Tarjeta de producto ---------------- */
+function tarjeta(p) {
+  const st = C.estadoStock(p.stock);
+  const off = C.descuento(p);
+  const tags = [
+    off ? `<span class="tag tag--off">-${off}%</span>` : '',
+    p.tags.includes('nuevo') ? '<span class="tag tag--new">Nuevo</span>' : '',
+    p.tags.includes('destacado') ? '<span class="tag tag--hit">Destacado</span>' : ''
+  ].join('');
+  return `
+  <article class="card" data-id="${p.id}">
+    <div class="card__media">
+      <div class="tags">${tags}</div>
+      <img src="${p.img}" alt="${esc(p.n)}" loading="lazy" decoding="async" width="600" height="600">
+    </div>
+    <div class="card__body">
+      <span class="card__cat">${esc(p.marca)}</span>
+      <h3 class="card__title">${esc(p.n)}</h3>
+      <p class="card__desc">${esc(p.d)}</p>
+      <div class="card__foot">
+        <span class="price">${C.mxn(p.p)}${p.ant ? `<s>${C.mxn(p.ant)}</s>` : ''}</span>
+        <span class="unit">${esc(p.unidad)}</span>
+      </div>
+      <span class="stock stock--${st.clase}">${st.texto}</span>
+    </div>
+    <div class="card__actions">
+      <button class="btn btn--ghost js-ver" type="button">Ver ficha</button>
+      <button class="btn btn--primary js-add" type="button" ${p.stock <= 0 ? 'disabled' : ''}>
+        ${p.stock <= 0 ? 'Agotado' : 'Agregar'}
+      </button>
+    </div>
+  </article>`;
+}
+const pintarGrid = (el, lista) => {
+  if (!el) return;
+  el.innerHTML = lista.length
+    ? lista.map(tarjeta).join('')
+    : `<div class="empty" style="grid-column:1/-1"><div>🔍</div><h3>Sin resultados</h3><p>Prueba con otra palabra o quita algún filtro.</p></div>`;
+};
+
+/* ---------------- Carrito ---------------- */
+function pintarCarrito() {
+  const cont = $('#cartItems'), ft = $('#cartFoot');
+  const t = C.totales(carrito, CONFIG);
+  $('.js-cart-count').forEach((b) => { b.textContent = t.piezas; b.hidden = t.piezas === 0; });
+  $('.js-cart-total').forEach((b) => (b.textContent = C.mxn(t.total)));
+
+  if (!cont) return;
+  if (!carrito.length) {
+    cont.innerHTML = `<div class="cart__empty"><div>🛒</div><p>Tu carrito está vacío.</p><p style="font-size:.85rem">Agrega productos y envía tu pedido por WhatsApp.</p></div>`;
+    if (ft) ft.hidden = true;
+    return;
+  }
+  if (ft) ft.hidden = false;
+  cont.innerHTML = carrito.map((l) => `
+    <div class="ci" data-id="${l.id}">
+      <img src="${l.img}" alt="" loading="lazy" width="64" height="64">
+      <div>
+        <b>${esc(l.n)}</b>
+        <small>${esc(l.unidad)} · ${C.mxn(l.p)}</small>
+        <div class="qty">
+          <button type="button" class="js-menos" aria-label="Quitar una unidad de ${esc(l.n)}">−</button>
+          <span aria-live="polite">${l.cantidad}</span>
+          <button type="button" class="js-mas" aria-label="Agregar una unidad de ${esc(l.n)}" ${l.cantidad >= l.stock ? 'disabled' : ''}>+</button>
+        </div>
+        <button type="button" class="ci__rm js-quitar">Eliminar</button>
+      </div>
+      <span class="ci__price">${C.mxn(l.p * l.cantidad)}</span>
+    </div>`).join('');
+
+  $('#rowSub').textContent = C.mxn(t.subtotal);
+  $('#rowEnvio').textContent = t.envioGratis ? 'GRATIS' : C.mxn(t.envio);
+  $('#rowTotal').textContent = C.mxn(t.total);
+  const nota = $('#cartNota');
+  if (nota) {
+    nota.textContent = t.envioGratis
+      ? '🎉 Tu pedido tiene envío gratis.'
+      : `Te faltan ${C.mxn(t.faltaParaEnvioGratis)} para envío gratis.`;
+  }
+  const btn = $('#btnWa');
+  if (btn) {
+    const ok = t.cumpleMinimo;
+    btn.disabled = !ok;
+    btn.textContent = ok ? `Enviar pedido por WhatsApp · ${C.mxn(t.total)}` : `Pedido mínimo ${C.mxn(CONFIG.pedidoMinimo)}`;
+  }
+}
+
+const abrirCarrito = () => { $('#cart')?.classList.add('open'); $('#overlay')?.classList.add('open'); $('#cart')?.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; $('#cartClose')?.focus(); };
+const cerrarCarrito = () => { $('#cart')?.classList.remove('open'); $('#overlay')?.classList.remove('open'); $('#cart')?.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+
+function agregarAlCarrito(id, n = 1) {
+  const p = porId(id);
+  const antes = C.piezas(carrito);
+  carrito = C.agregar(carrito, p, n);
+  guardar(); pintarCarrito();
+  avisar(C.piezas(carrito) > antes ? `${p.n} agregado` : 'No hay más existencias');
+}
+
+/* ---------------- Modal de ficha ---------------- */
+function abrirFicha(id) {
+  const p = porId(id); if (!p) return;
+  const st = C.estadoStock(p.stock);
+  const cat = CATEGORIAS.find((c) => c.id === p.cat);
+  $('#modalBody').innerHTML = `
+    <button class="modal__x" id="modalX" type="button" aria-label="Cerrar ficha">✕</button>
+    <img src="${p.img.replace('w=600','w=900')}" alt="${esc(p.n)}">
+    <div class="modal__info">
+      <span class="card__cat">${esc(p.marca)} · ${esc(cat?.nombre || '')}</span>
+      <h2 id="modalTitulo">${esc(p.n)}</h2>
+      <p style="color:var(--ink-2);font-size:.92rem;margin:0">${esc(p.d)}</p>
+      <div class="card__foot">
+        <span class="price">${C.mxn(p.p)}${p.ant ? `<s>${C.mxn(p.ant)}</s>` : ''}</span>
+        <span class="stock stock--${st.clase}">${st.texto}</span>
+      </div>
+      <ul class="specs">
+        <li><span>Presentación</span><b>${esc(p.unidad)}</b></li>
+        <li><span>Marca</span><b>${esc(p.marca)}</b></li>
+        <li><span>Categoría</span><b>${esc(cat?.nombre || '')}</b></li>
+        <li><span>Existencias</span><b>${p.stock > 0 ? p.stock + ' pzas' : 'Sin existencias'}</b></li>
+        <li><span>Código</span><b>${p.id.toUpperCase()}</b></li>
+      </ul>
+      <button class="btn btn--primary btn--block js-add-modal" type="button" data-id="${p.id}" ${p.stock <= 0 ? 'disabled' : ''}>
+        ${p.stock <= 0 ? 'Sin existencias' : 'Agregar al carrito'}
+      </button>
+    </div>`;
+  const m = $('#modal');
+  m.classList.add('open'); m.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+  $('#modalX').focus();
+}
+const cerrarFicha = () => { $('#modal')?.classList.remove('open'); $('#modal')?.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+
+/* ---------------- Arranque ---------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  // Datos del negocio en el marcado
+  $('[data-cfg]').forEach((el) => {
+    const v = el.dataset.cfg.split('.').reduce((o, k) => o?.[k], { ...CONFIG, ...CONFIG.negocio });
+    if (v != null) el.textContent = v;
+  });
+  $('[data-cfg-mxn]').forEach((el) => {
+    const v = el.dataset.cfgMxn.split('.').reduce((o, k) => o?.[k], CONFIG);
+    if (v != null) el.textContent = C.mxn(v);
+  });
+
+  pintarCarrito();
+
+  // Delegación global de eventos
+  document.addEventListener('click', (e) => {
+    const card = e.target.closest('.card');
+    if (e.target.closest('.js-add') && card) return agregarAlCarrito(card.dataset.id);
+    if (e.target.closest('.js-ver')  && card) return abrirFicha(card.dataset.id);
+
+    const addModal = e.target.closest('.js-add-modal');
+    if (addModal) { agregarAlCarrito(addModal.dataset.id); cerrarFicha(); return; }
+
+    const ci = e.target.closest('.ci');
+    if (ci) {
+      const id = ci.dataset.id;
+      if (e.target.closest('.js-mas'))    { carrito = C.cambiarCantidad(carrito, id,  1); guardar(); pintarCarrito(); return; }
+      if (e.target.closest('.js-menos'))  { carrito = C.cambiarCantidad(carrito, id, -1); guardar(); pintarCarrito(); return; }
+      if (e.target.closest('.js-quitar')) { carrito = C.quitar(carrito, id); guardar(); pintarCarrito(); return; }
+    }
+
+    if (e.target.closest('.js-cart-open')) { e.preventDefault(); abrirCarrito(); }
+    if (e.target.closest('#cartClose') || e.target.id === 'overlay') cerrarCarrito();
+    if (e.target.closest('#modalX') || e.target.id === 'modal') cerrarFicha();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { cerrarCarrito(); cerrarFicha(); }
+  });
+
+  // Envío por WhatsApp
+  $('#btnWa')?.addEventListener('click', () => {
+    if (!carrito.length) return;
+    const datos = {
+      nombre: $('#fNombre')?.value.trim(),
+      direccion: $('#fDireccion')?.value.trim(),
+      entrega: $('#fEntrega')?.value,
+      pago: $('#fPago')?.value,
+      notas: $('#fNotas')?.value.trim()
+    };
+    if (!CONFIG.whatsapp) return avisar('Falta configurar WHATSAPP_NUMERO en .env');
+    window.open(C.enlaceWhatsApp(carrito, CONFIG, datos), '_blank', 'noopener');
+  });
+
+  // Buscador del encabezado → manda a la tienda
+  $('.js-search').forEach((inp) => {
+    inp.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter') return;
+      const q = inp.value.trim();
+      if (location.pathname.endsWith('tienda.html')) {
+        window.dispatchEvent(new CustomEvent('buscar', { detail: q }));
+      } else {
+        location.href = `tienda.html?q=${encodeURIComponent(q)}`;
+      }
+    });
+  });
+
+  $('#burger')?.addEventListener('click', () => $('#navMovil')?.toggleAttribute('hidden'));
+
+  // Render según la página
+  if ($('#gridDestacados')) montarInicio();
+  if ($('#gridTienda'))     montarTienda();
+  if ($('#gridOfertas'))    montarOfertas();
+});
+
+/* ---------------- Inicio ---------------- */
+function montarInicio() {
+  $('#heroImg').src = HERO.principal;
+  $('#heroAb').src  = HERO.abarrotes;
+  $('#heroPa').src  = HERO.papeleria;
+
+  pintarGrid($('#gridDestacados'), PRODUCTOS.filter((p) => p.tags.includes('destacado')).slice(0, 8));
+  pintarGrid($('#gridNuevos'),     PRODUCTOS.filter((p) => p.tags.includes('nuevo')).slice(0, 4));
+
+  $('#cats').innerHTML = CATEGORIAS.map((c) => `
+    <a class="cat" href="tienda.html?cat=${c.id}">
+      <span class="cat__ico" aria-hidden="true">${c.icono}</span>
+      <b>${c.nombre}</b>
+      <span>${PRODUCTOS.filter((p) => p.cat === c.id).length} productos</span>
+    </a>`).join('');
+
+  $('#deals').innerHTML = OFERTAS_SEMANA.banners.map((b) => `
+    <div class="deal"><b>${esc(b.t)}</b><span>${esc(b.s)}</span></div>`).join('');
+}
+
+/* ---------------- Tienda ---------------- */
+function montarTienda() {
+  const url = new URLSearchParams(location.search);
+  const f = {
+    q: url.get('q') || '',
+    depto: url.get('depto') || 'todos',
+    cats: url.get('cat') ? [url.get('cat')] : [],
+    marcas: [],
+    max: Math.max(...PRODUCTOS.map((p) => p.p)),
+    orden: 'relevancia',
+    soloOferta: false,
+    soloDisponible: false,
+    categorias_meta: CATEGORIAS
+  };
+  const MAXP = f.max;
+  const inputBusq = $('#busqTienda');
+  if (inputBusq) inputBusq.value = f.q;
+
+  const catsVisibles = () =>
+    CATEGORIAS.filter((c) => f.depto === 'todos' || c.depto === f.depto);
+
+  function pintarFiltros() {
+    $('#fCats').innerHTML = catsVisibles().map((c) => `
+      <label class="chk">
+        <input type="checkbox" value="${c.id}" ${f.cats.includes(c.id) ? 'checked' : ''}>
+        <span>${c.icono} ${c.nombre}</span>
+        <small>${PRODUCTOS.filter((p) => p.cat === c.id).length}</small>
+      </label>`).join('');
+
+    const marcas = [...new Set(PRODUCTOS.map((p) => p.marca))].sort((a, b) => a.localeCompare(b, 'es'));
+    $('#fMarcas').innerHTML = marcas.map((m) => `
+      <label class="chk">
+        <input type="checkbox" value="${esc(m)}" ${f.marcas.includes(m) ? 'checked' : ''}>
+        <span>${esc(m)}</span>
+      </label>`).join('');
+  }
+
+  function aplicar() {
+    const r = C.filtrar(PRODUCTOS, f);
+    pintarGrid($('#gridTienda'), r);
+    $('#contador').textContent = `${r.length} ${r.length === 1 ? 'producto' : 'productos'}`;
+    const t = DEPTOS[f.depto];
+    $('#tituloTienda').textContent = t ? t.nombre : 'Todo el catálogo';
+    $('#subtituloTienda').textContent = t ? t.desc : 'Abarrotes y papelería en un mismo pedido, con entrega el mismo día.';
+    $('.js-depto').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.depto === f.depto)));
+  }
+
+  $('#fCats').addEventListener('change', (e) => {
+    f.cats = $('#fCats input:checked').map((i) => i.value); aplicar();
+  });
+  $('#fMarcas').addEventListener('change', () => {
+    f.marcas = $('#fMarcas input:checked').map((i) => i.value); aplicar();
+  });
+  const rango = $('#fPrecio');
+  rango.max = MAXP; rango.value = MAXP;
+  $('#precioVal').textContent = C.mxn(MAXP);
+  rango.addEventListener('input', () => { f.max = +rango.value; $('#precioVal').textContent = C.mxn(f.max); aplicar(); });
+  $('#fOferta').addEventListener('change', (e) => { f.soloOferta = e.target.checked; aplicar(); });
+  $('#fDisp').addEventListener('change', (e) => { f.soloDisponible = e.target.checked; aplicar(); });
+  $('#orden').addEventListener('change', (e) => { f.orden = e.target.value; aplicar(); });
+  inputBusq?.addEventListener('input', () => { f.q = inputBusq.value; aplicar(); });
+  window.addEventListener('buscar', (e) => { f.q = e.detail; if (inputBusq) inputBusq.value = e.detail; aplicar(); });
+
+  $('.js-depto').forEach((b) => b.addEventListener('click', () => {
+    f.depto = b.dataset.depto; f.cats = []; pintarFiltros(); aplicar();
+  }));
+  $('#limpiar').addEventListener('click', () => {
+    f.q=''; f.cats=[]; f.marcas=[]; f.max=MAXP; f.soloOferta=false; f.soloDisponible=false; f.depto='todos';
+    if (inputBusq) inputBusq.value='';
+    rango.value = MAXP; $('#precioVal').textContent = C.mxn(MAXP);
+    $('#fOferta').checked=false; $('#fDisp').checked=false;
+    pintarFiltros(); aplicar();
+  });
+  $('#toggleFiltros').addEventListener('click', () => $('#filtros').classList.toggle('open'));
+
+  pintarFiltros(); aplicar();
+}
+
+/* ---------------- Ofertas ---------------- */
+function montarOfertas() {
+  $('#vigencia').textContent = OFERTAS_SEMANA.vigencia;
+  $('#deals2').innerHTML = OFERTAS_SEMANA.banners.map((b) => `
+    <div class="deal"><b>${esc(b.t)}</b><span>${esc(b.s)}</span></div>`).join('');
+  pintarGrid($('#gridOfertas'), C.filtrar(PRODUCTOS, { soloOferta: true, orden: 'descuento' }));
+}
+
+})();</script>
+</body>
+</html>

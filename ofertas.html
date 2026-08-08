@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ofertas de la semana - La Esquina</title>
+  <meta name="description" content="Promociones vigentes en despensa, limpieza, cafe y regreso a clases. Precios rebajados durante toda la semana.">
+  <meta name="theme-color" content="#FF5A1F">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ofertas de la semana - La Esquina">
+  <meta property="og:description" content="Promociones vigentes en despensa, limpieza, cafe y regreso a clases. Precios rebajados durante toda la semana.">
+  <meta property="og:locale" content="es_MX">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23FF5A1F'/><text y='72' x='50' text-anchor='middle' font-size='58'>C</text></svg>">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"GroceryStore","name":"La Esquina","description":"Promociones vigentes en despensa, limpieza, cafe y regreso a clases. Precios rebajados durante toda la semana.",
+   "address":{"@type":"PostalAddress","streetAddress":"Av. Reforma 218, Col. Centro","addressCountry":"MX"},
+   "openingHours":"Mo-Sa 07:00-21:00","priceRange":"$$","currenciesAccepted":"MXN"}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="topbar"><div class="wrap">
+  Envio <b>GRATIS</b> en pedidos desde <span data-cfg-mxn="envioGratisDesde">$350.00</span> &middot; Entrega el mismo dia
+</div></div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <button class="iconbtn burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="logo" href="index.html">
+      <span class="logo__mark" aria-hidden="true">&#128722;</span>
+      <span>La Esquina<small>Abarrotes y papeleria</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html?depto=abarrotes">Abarrotes</a>
+      <a href="tienda.html?depto=papeleria">Papeler&iacute;a</a>
+      <a href="ofertas.html" aria-current="page">Ofertas</a>
+    </nav>
+    <div class="hdr__actions">
+      <div class="search">
+        <label class="sr-only" for="q">Buscar productos</label>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input class="js-search" id="q" type="search" placeholder="Buscar arroz, cuadernos, cafe..." autocomplete="off">
+      </div>
+      <button class="iconbtn js-cart-open" type="button" aria-label="Abrir carrito">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 11.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg><span class="badge js-cart-count" hidden>0</span>
+      </button>
+    </div>
+  </div>
+  <div class="search search--mobile" hidden id="navMovil">
+    <label class="sr-only" for="qm">Buscar productos</label>
+    <input class="js-search" id="qm" type="search" placeholder="Buscar productos..." autocomplete="off">
+    <nav class="nav" style="display:flex;flex-wrap:wrap;margin:10px 0 0" aria-label="Principal movil">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html?depto=abarrotes">Abarrotes</a>
+      <a href="tienda.html?depto=papeleria">Papeler&iacute;a</a>
+      <a href="ofertas.html" aria-current="page">Ofertas</a>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+  <section class="sec">
+    <div class="strip">
+      <div>
+        <p class="eyebrow" style="color:var(--yellow)">Vigencia: <span id="vigencia"></span></p>
+        <h2>Ofertas de la semana</h2>
+        <p>Precios rebajados en toda la tienda mientras dure el inventario. Se actualizan cada lunes por la manana.</p>
+      </div>
+      <a class="btn btn--primary" href="tienda.html">Ver catalogo completo</a>
+    </div>
+    <div class="deals" id="deals2" style="margin-top:16px"></div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="sec__head"><div>
+      <p class="eyebrow">Precio rebajado</p>
+      <h2>Productos en oferta</h2>
+      <p>Ordenados por porcentaje de descuento, del mayor al menor.</p>
+    </div></div>
+    <div class="grid" id="gridOfertas"></div>
+  </section>
+</div></main>
+<div class="overlay" id="overlay"></div>
+<aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="cart__hd">
+    <h2>Tu pedido</h2>
+    <button class="iconbtn" id="cartClose" type="button" aria-label="Cerrar carrito">&#10005;</button>
+  </div>
+  <div class="cart__items" id="cartItems"></div>
+  <div class="cart__ft" id="cartFoot" hidden>
+    <div class="field">
+      <label for="fNombre">Nombre de quien recibe</label>
+      <input id="fNombre" type="text" placeholder="Ana Rivera" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="fDireccion">Direccion de entrega</label>
+      <input id="fDireccion" type="text" placeholder="Calle, numero, colonia" autocomplete="street-address">
+    </div>
+    <div class="field" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <span><label for="fEntrega">Entrega</label>
+        <select id="fEntrega"><option value="domicilio">A domicilio</option><option value="tienda">Recoger en tienda</option></select></span>
+      <span><label for="fPago">Pago</label>
+        <select id="fPago"><option>Efectivo</option><option>Transferencia</option><option>Tarjeta en entrega</option></select></span>
+    </div>
+    <div class="field">
+      <label for="fNotas">Notas para el pedido</label>
+      <textarea id="fNotas" placeholder="Ej. tocar el timbre, el pan bien dorado..."></textarea>
+    </div>
+    <div class="row"><span>Subtotal</span><span id="rowSub">$0.00</span></div>
+    <div class="row"><span>Envio</span><span id="rowEnvio">$0.00</span></div>
+    <div class="row row--total"><span>Total</span><span id="rowTotal">$0.00</span></div>
+    <p class="cart__note" id="cartNota"></p>
+    <button class="btn btn--wa btn--block" id="btnWa" type="button" style="margin-top:12px">Enviar pedido por WhatsApp</button>
+    <p class="cart__note">Se abre WhatsApp con tu pedido ya escrito. Confirmas ahi y listo.</p>
+  </div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" aria-hidden="true">
+  <div class="modal__bd" id="modalBody"></div>
+</div>
+
+<div class="mbar">
+  <button class="btn btn--dark btn--block js-cart-open" type="button">
+    Ver pedido &middot; <span class="js-cart-total">$0.00</span>
+  </button>
+</div>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__grid">
+      <div>
+        <span class="ft__logo">La Esquina</span>
+        <p>La tienda del barrio, ahora tambien en linea. Abarrotes frescos y toda la papeleria, con entrega el mismo dia en tu colonia.</p>
+        <p><b style="color:#fff" data-cfg="direccion"></b></p>
+        <p data-cfg="horario"></p>
+      </div>
+      <div><h4>Comprar</h4>
+        <a href="tienda.html?depto=abarrotes">Abarrotes</a>
+        <a href="tienda.html?depto=papeleria">Papeleria</a>
+        <a href="ofertas.html">Ofertas de la semana</a>
+        <a href="tienda.html">Todo el catalogo</a></div>
+      <div><h4>Ayuda</h4>
+        <a href="#envios">Envios y cobertura</a>
+        <a href="#pagos">Formas de pago</a>
+        <a href="#devoluciones">Cambios y devoluciones</a>
+        <a href="#faq">Preguntas frecuentes</a></div>
+      <div><h4>Contacto</h4>
+        <a href="#" data-cfg="email"></a>
+        <a href="#">Pedidos por WhatsApp</a>
+        <a href="#">Facturacion</a></div>
+    </div>
+    <div class="ft__bot">
+      <span>&copy; 2026 La Esquina. Precios en pesos mexicanos, IVA incluido.</span>
+      <span>Fotografias de Unsplash &middot; Contenido de demostracion</span>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

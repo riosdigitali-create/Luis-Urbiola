@@ -1,0 +1,15 @@
+{
+  "name": "la-esquina-abarrotes-papeleria",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tienda en línea de abarrotes y papelería con pedido por WhatsApp",
+  "scripts": {
+    "build:config": "node scripts/build-config.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "build": "npm run build:config && npm run build:pages",
+    "dev": "npm run build && node servidor.mjs",
+    "start": "npm run dev",
+    "test": "npm run build:config && node tests/pruebas.mjs"
+  }
+}
